@@ -62,10 +62,26 @@ h1, h2, h3 {
 	color: #fff;
 }
 
+#hero h1 {
+	font-size: 3rem;
+}
+
+#hero .logo {
+	max-width: 200px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
 #intro {
 	background-color: #111;
 	color: #fff;
 }
+
+#intro h2 {
+	font-size: 2.5rem;
+	color: #fff;
+}
+
 /*
 @media screen and (max-width: 500px) {
 	#hero h1 {
@@ -106,14 +122,15 @@ h1, h2, h3 {
 
 .servicePod {
 	padding: 30px 20px;
+	margin-bottom: 20px;
 	border-top: 1px solid #eee;
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	border-left: 1px solid #eee;
 	border-radius: 5px;
 	-webkit-box-shadow: 2px 2px 3px 0px rgba(60, 60, 60, 0.25);
-	-moz-box-shadow:    2px 2px 3px 0px rgba(60, 60, 60, 0.25);
-	box-shadow:         2px 2px 3px 0px rgba(60, 60, 60, 0.25);
+	-moz-box-shadow: 2px 2px 3px 0px rgba(60, 60, 60, 0.25);
+	box-shadow: 2px 2px 3px 0px rgba(60, 60, 60, 0.25);
 	background-color: #fff;
 }
 /*
@@ -122,8 +139,27 @@ h1, h2, h3 {
 	margin: 0 auto;
 }
 */
+
+.contactLinks li {
+	list-style: none;
+	display: inline;
+	padding-right: 10px;
+}
+
 /* Sitewide */
 
 #footer {
 	background-color: /*#DDD;*/ #111;
+	color: #eee;
+	font-size: 0.5em;
+	padding: 20px 10px;
+
+}
+
+.footerLinks {
+	list-style: none;
+}
+
+.footerLinks li {
+	display: inline;
 }
