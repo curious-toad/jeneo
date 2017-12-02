@@ -109,10 +109,11 @@ h1, h2, h3 {
 	color: #fff;
 }
 
-/*.scrollCTA {
-  position: relative;
-	bottom: -100px; 
-} */
+.scrollCTA a {
+/*  position: relative;
+	bottom: -100px;*/
+color: #eee; 
+} 
 
 .avatar {
 	border-radius: 50%;
