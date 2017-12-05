@@ -11,8 +11,9 @@
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- FONT -->
+	<!-- FONTS -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Titillium+Web:400,600" rel="stylesheet" type="text/css"> 
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/normalize.css">
@@ -32,11 +33,14 @@
 			<div class="twelve columns">
 				<img class="logo" src="./images/logo.jpg" alt="Jeneo logo">
 				<h1>The technology sector is in crisis.</br></br>By empowering women,</br>Jeneo is here to change that.</h1>
-				<div class="scrollCTA">
+				<!--<div class="scrollCTA">
 					<a href="#intro"><span>Continue</span></a>
-				</div>
+				</div>-->
 			</div>
 		</div>
+	</div>
+	<div class="scrollCTA">
+		<a href="#intro">Continue</br><i class="fa fa-angle-down fa-lg" aria-hidden="true"></i></a>
 	</div>
 	</section>
 
@@ -70,7 +74,7 @@
 		</div>
 	</div>
 	</section>
-	<section id="services" class="u-full-width homepage hpCream">
+	<section id="services" class="u-full-width homepage hpLightGrey">
 	<div class="container">
 		<!-- Services area -->
 		<div class="row">
@@ -101,7 +105,7 @@
 	</section>
 
 	<!-- Events -->
-	<section id="events" class="u-full-width homepage hpGrey">
+	<section id="events" class="u-full-width homepage hpDarkGrey">
 	<div class="container">
 		<div class="row">
 			<div class="twelve columns">
@@ -121,14 +125,35 @@
 				<h2>Get Involved</h2>
 				<p>If you're a woman working in tech and you want to speak at events, we'd love to hear from you. Individuals from under-represented groups are encouraged to sign up too. Please leave your details below.</p>
 				<!-- Form goes here -->
-				<form name="enquiryForm" netlify>
+				<form id="enquiryForm" name="enquiryForm" netlify>
 					<fieldset>
-						<label>Firstname: <input type="text" name="firstname"/></label>
-						<label>Lastname: <input type="text" name="lastname"/></label>
-						<label>Job Title: <input type="text" name="jobtitle"/></label>
-						<label>Email: <input type="email" name="email"/></label>
-						<label>What topics would you like to speak about? <input type="textarea" name="topics"/></label>
-						<input type="submit" name="submit" value="Submit">
+					<div class="row">
+						<div class="five columns offset-by-one">
+							<label>Firstname:</label>
+							<input class="u-full-width" type="text" name="firstname" placeholder="Your Firstname"/>
+						</div>
+						<div class="five columns">
+							<label>Lastname:</label>
+							<input class="u-full-width" type="text" name="lastname" placeholder="Your Lastname"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="five columns offset-by-one">
+							<label>Job Title:</label>
+							<input class="u-full-width" type="text" name="jobtitle" placeholder="Your Job Title"/>
+						</div>
+						<div class="five columns">
+							<label>Email:</label>
+							<input class="u-full-width" type="email" name="email" placeholder="email@example.com"/>
+						</div>
+					</div>
+					<div class="row">
+						<div class="ten columns offset-by-one">
+							<label>What topics are you interested in?</label>
+							<textarea class="u-full-width" type="textarea" name="topics" placeholder="I would like to speak about..."/></textarea>
+						</div>	
+					</div>
+					<input class="two columns offset-by-one button-primary" type="submit" name="submit" value="Submit">
 					</fieldset>
 				</form>
 			</div>
@@ -145,9 +170,10 @@
 				<p>We'd love to hear from you!</p>
 				<!-- Contact links -->
 				<ul class="contactLinks">
-					<li><a href="mailto:enquiries@jeneo.co.uk" title="Email Jeneo">Email Jeneo</a></li>
-					<li><a href="#" title="Follow Jeneo on Twitter">Twitter</a></li>
-					<li><a href="#" title="Like Jeneo on Facebook">Facebook</a></li>
+					<li><a href="mailto:enquiries@jeneo.co.uk" title="Email Jeneo"><i class="fa fa-envelope fa-4x" aria-hidden="true" alt="Email"></i><!--Email Jeneo--></a></li>
+					<li><a href="https://twitter.com/Jeneo_tech" title="Follow Jeneo on Twitter"><i class="fa fa-twitter fa-4x" aria-hidden="true" alt="Twitter"></i>
+<!--Twitter--></a></li>
+					<li><a href="https://www.facebook.com/Jeneo-1398357766952255/" title="Like Jeneo on Facebook"><i class="fa fa-facebook fa-4x" aria-hidden="true" alt="Facebook"></i><!--Facebook--></a></li>
 				</ul>
 				<!-- Mailchimp signup -->
 				<p>Signup to our newsletter to stay up to date.</p>
@@ -165,15 +191,28 @@
 				<ul class="footerLinks">
 					<li><a href="#" title="Cookies & Privacy">Cookies &amp; Privacy</a></li>
 					<li><a href="#" title="Terms & Conditions">Terms &amp; Conditions</a></li>
+					<li><a href="#" title="Sitemap">Sitemap</a></li>
 				</ul>
-				<span>Jeneo is a limited company <a href="https://beta.companieshouse.gov.uk/company/10920560" title="View Jeneo at Companies House" target="_blank">registered</a> in England and Wales, no. 10920560.</span>
-				<span>&copy; 2017 Jeneo. All rights reserved.</span>
+				<span class="legal">&copy; 2017 Jeneo. All rights reserved. Jeneo is a limited company <a href="https://beta.companieshouse.gov.uk/company/10920560" title="View Jeneo at Companies House" target="_blank">registered</a> in England and Wales, no. 10920560.</span></br>
 				<span class="websiteCredit">Website design &amp; development by <a href="https://www.curioustoad.co.uk" title="Curious Toad">Curious Toad</a>.</span>
 			</div>
 		</div>
 	</div>
 	</section>
 
+	<!--ORIGINAL FORM BACKUP ----
+	<form name="enquiryForm" netlify>
+					<fieldset>
+						<label>Firstname: <input type="text" name="firstname"/></label>
+						<label>Lastname: <input type="text" name="lastname"/></label>
+						<label>Job Title: <input type="text" name="jobtitle"/></label>
+						<label>Email: <input type="email" name="email"/></label>
+						<label>What topics would you like to speak about? <input type="textarea" name="topics"/></label>
+						<input type="submit" name="submit" value="Submit">
+					</fieldset>
+				</form>
+	--->
+	
 <!-- End Document -->
 </body>
 </html>
