@@ -49,10 +49,11 @@
 }
 
 /* For devices larger than 550px */
-/*** amend for services boxes to 700px min-width ***
+/*** amend for services boxes to 750px min-width ***
 @media (min-width: 550px) { 
 ***/
-@media (min-width:700px) {
+@media (min-width:750px) {
+	
   .container {
     width: 80%; }
   .column,
