@@ -89,6 +89,7 @@ h1, h2, h3 {
 
 #intro {
 	background-color: #111;
+	background-image: url("..images/intro.jpg");
 	color: #fff;
     display: flex;
     align-items: center;
