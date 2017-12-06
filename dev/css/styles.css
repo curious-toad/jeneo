@@ -59,7 +59,7 @@ h1, h2, h3 {
 
 #hero {
 	background-color: #226089;
-	background-image: url("../images/hero.jpg");
+	background: url("../images/hero.jpg") center;
 	color: #fff;
 }
 
@@ -89,7 +89,8 @@ h1, h2, h3 {
 
 #intro {
 	background-color: #111;
-	background-image: url("../images/intro.jpg");
+	background: url("../images/intro.jpg") center;
+	background-size: auto 100%;
 	color: #fff;
     display: flex;
     align-items: center;
