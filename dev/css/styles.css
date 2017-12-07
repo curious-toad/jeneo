@@ -35,6 +35,31 @@ html, body {
 	/*height: 100vh;*/
 }
 
+.fullheightCentered {
+	
+}
+
+.contentCentered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.contentVerticalCentered {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+
 /* Typography */
 
 body {
@@ -49,7 +74,9 @@ h1, h2, h3 {
 	text-transform: uppercase;
 }
 
-/* Homepage styles */
+/***** HOMEPAGE STYLES *****/
+
+/* generic container for homepage */
 
 .homepage {
 	text-align: center;
@@ -57,22 +84,10 @@ h1, h2, h3 {
 	padding-bottom: 50px;
 }
 
-.homepage h3 {
-	color: #226089;
-}
-
-.homepage blockquote {
-	font-size: 2.25rem;
-	color: #226089;
-	font-style: italic;
-}
-
-.homepage .testimonialCredit {
-	font-weight: bold;
-	font-size: 1.75rem;
-}
+/* Full height sections */
 
 #hero {
+	position: relative;
 	background-color: #226089;
 	background: url("../images/hero.jpg") center;
 	color: #fff;
@@ -80,7 +95,7 @@ h1, h2, h3 {
 
 @media (max-width: 700px) {
 	#hero h1 {
-	 font-size: 3rem;
+	 font-size: 2.5rem;
 	}
 }
 	
@@ -103,6 +118,7 @@ h1, h2, h3 {
 }
 
 #intro {
+	position: relative;
 	background-color: #111;
 	background: url("../images/intro.jpg") center;
 	background-size: auto 100%;
@@ -117,12 +133,13 @@ h1, h2, h3 {
   }
 }
 
-@media (min-width: 701px) and (max-width: 959px) {
+/*@media (min-width: 701px) and (max-width: 959px) {
 	.homepage h2 {
 	 font-size: 3.75rem;
 	}
 }
 
+/* Homepage colour schemes */
 
 .hpDarkGrey {
 	background-color: /*#8F8F8F;*/ #232323;
@@ -138,31 +155,94 @@ h1, h2, h3 {
 	color: #fff;
 }
 
-.scrollCTA a {
-	/*display: block;
-	position: relative;
-	bottom: 0px;
-	margin-bottom: 10px;
-	width: 100px;
-	color: #eee; */
-	text-decoration: none;
+.homepage h3 {
+	color: #226089;
+}
+
+
+.hpDarkGrey .button {
+	color: #232323;
+	background-color:#fff;
+}
+
+.hpDarkGrey .button:hover {
+	color: #232323;
+	background-color:#dedede;
+}
+
+/* Scroller */
+
+.scrollCTA {
 	text-align: center;
 	position: absolute;
-	color: #fff;
-	text-align: center;
-	width: 24px;
-	left: 50%;
-	margin-left: -36px;
-	margin-bottom: 0px;
 	bottom: 10px;
-	/*height: 100px;*/
+	margin-bottom: 0px;
+	width: 100%;
+}
+
+.scrollCTA a {
+	color: #fff;
 	cursor: pointer;
 } 
+
+.scrollCTA a:hover {
+	color: #dedede;
+}
+
+/* About section */
 
 .avatar {
 	border-radius: 50%;
 	margin-bottom: 30px;
 	max-width: 200px;
+}
+
+/* Homepage Testimonials */
+
+.homepage .testimonialContainer {
+	margin-top: -30px;
+	border-top: 3px solid #ddd; 
+	border-bottom: 3px solid #ddd; 
+	padding-top: 30px; 
+	padding-bottom: 30px;
+}
+
+.homepage blockquote {
+	font-size: 2.25rem;
+	color: #226089;
+	font-style: italic;
+}
+
+.homepage blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.homepage blockquote:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.homepage .testimonialCredit {
+	font-weight: bold;
+	font-size: 1.75rem;
+}
+
+.homepage .clientLogo {
+	max-width: 200px;
+	height: auto;
+}
+
+.homepage h5 {
+	margin-top: -20px;
 }
 
 /* Make Services column heights equal at non-mobile breakpoint */
@@ -214,24 +294,17 @@ h1, h2, h3 {
 	}
 }
 
+/* Enquiry form section */
+
 #enquiryForm {
 	text-align: left;
 }
 
-.hpDarkGrey .button {
-	color: #232323;
-	background-color:#fff;
-}
-
-.hpDarkGrey .button:hover {
-	color: #232323;
-	background-color:#dedede;
-}
+/* Contact section */
 
 .contactLinks li {
 	list-style: none;
 	display: inline;
-	padding-right: 10px;
 }
 
 .contactLinks li a {
@@ -244,7 +317,7 @@ h1, h2, h3 {
 	color: #dedede;
 }
 
-/* Sitewide */
+/***** SITEWIDE STYLES *****/
 
 .introduction {
 	font-size: 2rem;
@@ -261,12 +334,12 @@ h1, h2, h3 {
 	color: #eee;
 	font-size: 0.75em;
 	padding: 20px 10px;
-
 }
 
 .footerLinks {
 	list-style: none;
 	float: left;
+	padding-right: 3em;
 }
 
 .footerLinks li {
