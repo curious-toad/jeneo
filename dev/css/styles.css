@@ -1,4 +1,4 @@
-﻿/* SETUP AND UTILITY CLASSES */
+/* SETUP AND UTILITY CLASSES */
 
 /* apply box sizing */
 
@@ -36,28 +36,28 @@ html, body {
 }
 
 .fullheightCentered {
-
+	
 }
 
 .contentCentered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  -o-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 }
 .contentVerticalCentered {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 /* Typography */
@@ -95,13 +95,19 @@ h1, h2, h3 {
 
 @media (max-width: 700px) {
 	#hero h1 {
-	 font-size: 2.5rem;
+		font-size: 2.5rem;
+	}
+	#hero h2 {
+		font-size: 2rem;
 	}
 }
-
+	
 @media (min-width: 701px) and (max-width: 959px) {
 	#hero h1 {
-	 font-size: 4rem;
+		font-size: 3.5rem;
+	}
+	#hero h2 {
+		font-size: 2.5rem;
 	}
 }
 
@@ -123,14 +129,14 @@ h1, h2, h3 {
 	background: url("../images/intro.jpg") center;
 	background-size: auto 100%;
 	color: #fff;
-    display: flex;
-    align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 700px) {
-  .homepage h2 {
-    font-size: 2.75rem;
-  }
+  .homepage h2 {
+    font-size: 2.75rem;
+  }
 }
 
 /*@media (min-width: 701px) and (max-width: 959px) {
@@ -214,21 +220,21 @@ h1, h2, h3 {
 }
 
 .homepage blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 3em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
 
 .homepage blockquote:after {
-  color: #ccc;
-  content: close-quote;
-  font-size: 2.5em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+  color: #ccc;
+  content: close-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
 }
 
 .homepage .testimonialCredit {
