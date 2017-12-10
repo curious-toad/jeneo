@@ -302,6 +302,12 @@ h1, h2, h3 {
 	}
 }
 
+.servicesIcon {
+	margin-bottom: 0px;
+	max-width: 150px;
+	height: auto;
+}
+
 /* Enquiry form section */
 
 #enquiryForm {
