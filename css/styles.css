@@ -333,6 +333,45 @@ h1, h2, h3 {
 
 /***** SITEWIDE STYLES *****/
 
+/***** Header *****/
+
+header {
+	position: fixed;
+	z-index: 1; /* allows for header to appear above content, but below menu */
+	height: 60px;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	background-color: #226089;
+}
+
+@media (min-width: 700px) {
+	header {
+		height: 80px;
+	}
+}
+
+#siteLogo {
+	text-decoration: none;
+}
+
+#siteLogo img {
+	height: 50px;
+	width: auto;
+	padding: 5px 0px;
+	margin: 5px 0;
+	vertical-align: middle;
+}
+
+@media (min-width: 700px) {
+	#siteLogo img {
+		height: 70px;
+	}
+}
+
+
+/***** Content *****/
+
 .introduction {
 	font-size: 2rem;
 }
@@ -346,17 +385,122 @@ h1, h2, h3 {
 	text-align: left;
 	background-color: #111;
 	color: #eee;
-	font-size: 0.75em;
 	padding: 20px 10px;
 }
 
 .footerLinks {
 	list-style: none;
-	float: left;
-	padding-right: 3em;
+	line-height: 1.5rem;
 }
 
-.footerLinks li {
-	display: inline;
-	padding-right: 1em;
+.footerLinks a {
+	color: #fff;
+	text-decoration: none;
 }
+
+.footerLinks i {
+	padding-right: 0.5em;
+}
+
+.legal, .websiteCredit {
+	font-size: 0.75em;
+}
+
+#footerMailchimpInput {
+	width: 75%;
+	float: left;
+}
+
+#footerMailchimpButton {
+	width: 15%;
+	float: right;
+	color: #fff;
+	background-color: #333;
+	border: none;
+	text-align: left;
+}
+
+/***** BLOG STYLES *****/
+
+.coverPhoto {
+	background-size: cover;
+	/*padding-top: 10%;
+	margin-bottom: 50px;*/
+	margin-top: 60px;
+	height: 400px;
+	text-align: center;
+	color: #ffffff;
+	line-height: 400px;
+}
+
+@media (min-width: 700px) {
+	.coverPhoto {
+		margin-top: 80px;
+		height: 500px;
+		line-height: 500px;
+	}
+}
+
+.coverPhotoContent {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
+}
+
+.coverPhoto h2 {
+	text-transform: none;
+}
+
+.blogPostList {
+	margin-top: 50px;
+}
+
+.postList {
+	list-style-type: none;
+	width: 100%;
+}
+
+.postList li {
+	display: inline;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.postListItem {
+	padding-bottom: 25px;
+	border-bottom: 2px solid #ccc;
+}
+
+.postListItem a {
+	color: #226089;
+	text-decoration: none;
+}
+
+.postListDate, .postListTag {
+	color: #777777;
+}
+
+.postListTag {
+	color: #777777;
+	float: right;
+}
+
+.postListFeaturedImage img {
+	width: 100%; 
+	height: auto;
+	margin-bottom: 30px;
+}
+
+/***** Testing styles *****
+
+.postList li:nth-child(odd) {
+    color: #ab2366;
+	float: left;
+}
+
+.postList li:nth-child(even) {
+	color: #449911;
+	float: right;
+}
+
+*****/
