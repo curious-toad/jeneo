@@ -353,6 +353,7 @@ header {
 
 #siteLogo {
 	text-decoration: none;
+	float: left;
 }
 
 #siteLogo img {
