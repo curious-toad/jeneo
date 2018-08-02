@@ -370,19 +370,9 @@ header {
 	}
 }
 
+/***** Footer *****/
 
-/***** Content *****/
-
-.introduction {
-	font-size: 2rem;
-}
-
-.button-primary {
-	background-color: #226089;
-	color: #fff;
-}
-
-#footer {
+footer {
 	text-align: left;
 	background-color: #111;
 	color: #eee;
@@ -419,6 +409,17 @@ header {
 	background-color: #333;
 	border: none;
 	text-align: left;
+}
+
+/***** Content *****/
+
+.introduction {
+	font-size: 2rem;
+}
+
+.button-primary {
+	background-color: #226089;
+	color: #fff;
 }
 
 /***** BLOG STYLES *****/

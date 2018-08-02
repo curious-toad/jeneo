@@ -26,10 +26,18 @@
 	top: 60px;
 	left: 0;
 	z-index: 10;
-	width: 100%;
+	
 	list-style: none;
 	text-align: left;
 }
+
+@media (max-width: 699px) { /* Wrapped in media query to fix desktop width bug */
+ 
+#navigation {
+	width: 100%;
+	}
+}
+ 
  
 #navigation a {
 	height: 0;
@@ -43,19 +51,20 @@
 	text-decoration: none;
  
 	-webkit-transition: 0.5s;
-		 -moz-transition: 0.5s;
-			-ms-transition: 0.5s;
-			 -o-transition: 0.5s;
-					transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
 }
 
-#toggle:checked ~ nav #navigation {
+@media (max-width: 699px) { /* Wrapped in media query to fix mobile rotation bug */
+	#toggle:checked ~ nav #navigation {
 	z-index: 101;
 	-webkit-box-shadow: 0px 5px 5px 3px #333;
-		 -moz-box-shadow: 0px 5px 5px 3px #333;
-			-ms-box-shadow: 0px 5px 5px 3px #333;
-			 -o-box-shadow: 0px 5px 5px 3px #333;
-					box-shadow: 0px 5px 5px 3px #333;
+	-moz-box-shadow: 0px 5px 5px 3px #333;
+	-ms-box-shadow: 0px 5px 5px 3px #333;
+	-o-box-shadow: 0px 5px 5px 3px #333;
+	box-shadow: 0px 5px 5px 3px #333;
 }
 
 #toggle:checked ~ nav #navigation a {
@@ -69,6 +78,7 @@
 
 #toggle:checked ~ nav #navigation a:hover {
 	background: #555;
+}
 }
  
 #toggle:checked ~ nav #navigation #close {
@@ -99,10 +109,13 @@
 		right: 2%;
 		left: 66%;
 		-webkit-box-shadow: 0;
-			 -moz-box-shadow: 0;
-				-ms-box-shadow: 0;
-				 -o-box-shadow: 0;
-						box-shadow: 0;
+		-moz-box-shadow: 0;
+		-ms-box-shadow: 0;
+		-o-box-shadow: 0;
+		box-shadow: 0;
+		background: none; /*check if fixed on mobile resize */
+		background-color: #226089; /*check if fixed on mobile resize */
+		border: none; /*check if fixed on mobile resize */
 }
 
 #navigation li {
@@ -120,7 +133,8 @@
 	height: 1.5em;
 	display: inline;
 	float: right;
-	background: transparent;
+	background: none;
+	background-color: #226089;
 	padding: 0 1.15em;
 	border-bottom: 0
 }
@@ -130,11 +144,9 @@
 }
 }
 
-/* check if it's here */
-
 #navigation #close {
 	display: none;
-} /*overwrite for all sizes */
+} /* Added again to overwrite and apply for all sizes */
 
 
 /* fix for iOS and Android */
@@ -151,9 +163,14 @@ body {
 /* MY OWN SHIT */
 
 @media (min-width: 700px) {
-	#navigation li.navigationHiddenItem { /*hides items on desktop view */
+	#navigation li.navigationHiddenItem { /* Hides items on desktop view */
 		display: none;
-}
+	}
+	
+	#navigation { /* Fixes position of desktop navigation */
+	position: static;
+	margin: 30px 0;
+	}
 }
 
 nav {
