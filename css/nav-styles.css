@@ -2,17 +2,18 @@
 
 .btn {
 	position: absolute;
-	top: 4px;
+	top: 0px;
 	right: 5%;
 	z-index: 100;
-	padding: 1em 2%;
+	height: 100%;
+	padding: 1.25em 2%;
 	color: #fff;
 	/*border-radius: 0.25em;*/
 	background-color: #226089;
 }
  
 .btn:hover {
-	background-color: #2872a4;
+	background-color: #226089; /*#2872a4; now set to prevent sticky hover on touch */
 }
 
 #toggle {

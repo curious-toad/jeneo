@@ -506,3 +506,62 @@ footer {
 }
 
 *****/
+
+.postListItem {
+	width: 48%;
+	margin-right: 2%;
+}
+
+@media (max-width: 700px) {
+	.postListItem {
+		width: 100%;
+	}
+}
+
+/* flexbox approach -- http://www.lottejackson.com/learning/an-equal-height-grid-using-flexbox */
+
+.postList {
+	/*overflow: auto; ** for old technique **/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.postListItem {
+  display: flex; 
+  /*padding: 0.5em;*/
+  width: 100%;
+}
+
+@media (max-width: 699px) {
+  .postListItem {
+    width: 100%;
+  }
+}
+@media (min-width: 700px) {
+  .postListItem {
+    width: 48%;
+  }
+}
+
+.postListContent {
+  display: flex;
+   flex-direction: column;
+   background-color: #fff;
+   /*padding: 1em;*/
+   width: 100%;
+}
+
+.postListContent p {
+  flex: 1 0 auto;
+}
+
+.postListContent span {
+	align-self: flex-end;
+}	
+
+.postListFeaturedImage {
+	max-height: 300px;
+	width: auto;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
