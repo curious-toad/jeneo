@@ -40,33 +40,35 @@
 
 </head>
 <body>
-	<!-- Nav -->
-	<section id="navbar" class="u-full-width">
+
+	<!-- Header -->
+	<header class="u-full-width">
 		<div class="container">
 			<div class="row">
 				<div class="twelve columns">
-					<a id="siteLogo" href="#">
+					<!-- Brand -->
+					<a id="siteLogo" href="#" title="Jeneo">
 						<img src="./images/jeneo-logo-200px.png" alt="Jeneo">
 					</a>
+					<!-- Navigation -->
+					<label class="btn" for="toggle" onclick>Menu <i class="fa fa-bars" aria-hidden="true" alt="Menu"></i></label>
+					<input id="toggle" type="checkbox" />
 					
- <div id="mySidenav" class="sidenav">
-  <ul id="navawesome">
-  <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Services</a></li>
-  <li><a href="#">Clients</a></li>
-  <li><a href="#">Contact</a></li>
-  </ul>
-</div>
-
-<!-- Use any element to open the sidenav -->
-<span id="menuButton" onclick="openNav()">Menu =]</span>
-					
+					<nav>
+						<ul id="navigation">
+							<li class="navigationHiddenItem"><a href="#" title="#title">Home</a></li>
+							<li><a href="http://www.google.com" title="#title">Events</a></li>
+							<li class="current"><a href="#" title="#title">Blog</a></li>
+							<li><a href="#" title="#title">Get Involved</a></li>
+							<li id="close"><label for="toggle">Close</label></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
 		</div>
-	</section>
-	<!-- Blog cover photo --> <!--used to have fullheight set -->
+	</header>
+
+	<!-- Blog cover photo -->
 	<section id="blogHero" class="u-full-width coverPhoto" style="background-image: url(./images/blog/blog-cover-photo.jpg);">
 		<div class="container">
 			<div class="row">
@@ -79,54 +81,84 @@
 			</div>
 		</div>
 	</section>
+	
 	<!-- Blog post list -->
-	<section class="blogPostList">
-		<div class="container">
+	
+	<div class="container">
+		<div class="row">
 			<ul class="postList">
-				<li>
-					<div class="row">
-						<div class="six columns postListItem">
-							<div class="postListFeaturedImage">
-								<a href="#" title="#posttitle"><img src="./images/blog/office-space.jpg" alt="Blog Featured Image"></a>
-							</div>
-							<a href="#" title="#posttitle"><h3>Post title about tech in the workplace</h3></a>
-							<p class="postListSnippet">Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.</p>
-							<span class="postListDate">15 May 2018</span>
-							<span class="postListTag">in <a href="#" title="#categorytitle"> Workplace</a></span>
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="#" title="#posttitle"><img src="./images/blog/office-space.jpg" alt="Blog Featured Image"></a>
+					</div>
+					<div class="postCardContent">
+						<a href="#" title="#posttitle"><h3>Post title about tech in the workplace</h3></a>
+						<p>Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.</p>
 						</div>
+					<div class="postCardInfo">
+						<span>15 May 2018</span>
+						<span class="postCardTag">in <a href="#category" title="#categorytitle">Workplace</a></span>
 					</div>
 				</li>
-				<li>
-					<div class="row">
-						<div class="six columns postListItem">
-							<div class="postListFeaturedImage">
-								<a href="#" title="#posttitle"><img src="./images/blog/mobile-app-grid.jpg" alt="Blog Featured Image"></a>
-							</div>
-							<a href="#" title="#posttitle"><h3>Post title about something on mobile</h3></a>
-							<p class="postListSnippet">Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.</p>
-							<span class="postListDate">10 May 2018</span>
-							<span class="postListTag">in <a href="#" title="#categorytitle"> Mobile</a></span>
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="#" title="#posttitle"><img src="./images/blog/mobile-app-grid.jpg" alt="Blog Featured Image"></a>
+					</div>
+					<div class="postCardContent">
+						<a href="#" title="#posttitle"><h3>Post title about something on mobile</h3></a>
+						<p>Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.</p>
 						</div>
+					<div class="postCardInfo">
+						<span>10 May 2018</span>
+						<span class="postCardTag">in <a href="#category" title="#categorytitle">Mobile</a></span>
 					</div>
 				</li>
-				<li>
-					<div class="row">
-						<div class="six columns postListItem">
-							<div class="postListFeaturedImage">
-								<a href="#" title="#posttitle"><img src="./images/blog/office-space.jpg" alt="Blog Featured Image"></a>
-							</div>
-							<a href="#" title="#posttitle"><h3>A third one for wrapping purposes</h3></a>
-							<p class="postListSnippet">Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.</p>
-							<span class="postListDate">7 May 2018</span>
-							<span class="postListTag">in <a href="#" title="#categorytitle"> Dummy</a></span>
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="#" title="#posttitle"><img src="./images/blog/conference-notes.jpg" alt="Blog Featured Image"></a>
+					</div>
+					<div class="postCardContent">
+						<a href="#" title="#posttitle"><h3>A third title, showing wrapping and it has a long, long title that affects the length</h3></a>
+						<p>Post excerpt here. Post excerpt here. Post excerpt here. Post excerpt here. </p>
 						</div>
+					<div class="postCardInfo">
+						<span>25 April 2018</span>
+						<span class="postCardTag">in <a href="#category" title="#categorytitle">Category</a></span>
+					</div>
+				</li>
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="#" title="#posttitle"><img src="./images/blog/apple-fan.jpg" alt="Blog Featured Image"></a>
+					</div>
+					<div class="postCardContent">
+						<a href="#" title="#posttitle"><h3>Short title</h3></a>
+						<p>Isn't it cool how the bottom borders still align? Post excerpt here. Post excerpt here. Post excerpt here. </p>
+						</div>
+					<div class="postCardInfo">
+						<span>20 November 2017</span>
+						<span class="postCardTag">in <a href="#category" title="#categorytitle">Category</a></span>
+					</div>
+				</li>
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="#" title="#posttitle"><img src="./images/blog/android-phone-square.jpg" alt="Blog Featured Image"></a>
+					</div>
+					<div class="postCardContent">
+						<a href="#" title="#posttitle"><h3>Square Image test</h3></a>
+						<p>This image was originally square, but it's now dynamically cropped to match the others. Sweet.</p>
+						</div>
+					<div class="postCardInfo">
+						<span>10 October 2017</span>
+						<span class="postCardTag">in <a href="#category" title="#categorytitle">Category</a></span>
 					</div>
 				</li>
 			</ul>
 		</div>
-	</section>
+	</div>
+	
 	<!-- Footer -->
-	<section id="footer" class="u-full-width">
+	
+	<footer id="footer" class="u-full-width">
 		<div class="container">
 			<div class="row">
 				<!-- Contact Links -->				
@@ -148,7 +180,7 @@
 							<div id="footerMailchimpWidget">
 								<form action="https://jeneo.us17.list-manage.com/subscribe/post?u=24e1fad29fef10abeb60ddbc5&amp;id=059e1bf125" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 								</form>
-								<input type="email" value="" name="EMAIL" class="u-full-width required email" id="footerMailchimpInput" placeholder="email@example.com" style="color: #111;" />
+								<input type="email" value="" name="EMAIL" class="u-full-width required email" id="footerMailchimpInput" placeholder="Your email address" style="color: #111;" />
 								
 								<div id="mce-responses" class="clear">
 									<div class="response" id="mce-error-response" style="display:none"></div>
@@ -188,15 +220,13 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</footer>
 	
 <!-- End Document -->
 
 <!-- Scripts -->
 	<!-- Include jQuery -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- Navigation script -->
-	<script type="text/javascript" src="./js/main-nav.js"></script>
 
 	
 <!-- Cleanest code for form ----
