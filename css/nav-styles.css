@@ -170,12 +170,7 @@ body {
 	
 	#navigation { /* Fixes position of desktop navigation */
 	position: static;
-	margin: 30px 0;
 	}
-}
-
-nav {
-	float: right;
 }
 
 #navigation li {
