@@ -60,6 +60,22 @@ html, body {
   width: 100%;
 }
 
+.margin-top-60 { /* Pushes content down to accomodate header */
+	margin-top: 60px;
+}
+
+/* Scrolling fix - adds additional headroom for anchor links to accomodate header */
+
+:target:before {
+    content: "";
+    display: block;
+    height: 114px;
+    margin: -62px 0 0;
+	visibility: hidden;
+	-webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
 /* Typography */
 
 body {
@@ -408,27 +424,39 @@ footer {
 /***** Cover photos *****/
 
 .coverPhoto {
+	position: relative;
+	background-color: #d2cbc5;
 	background-size: cover;
-	/*padding-top: 10%;
-	margin-bottom: 50px;*/
-	margin-top: 60px;
 	height: 400px;
 	text-align: center;
 	color: #ffffff;
-	line-height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
+.coverPhotoOverlay:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(0,0,0,.4);
+  background: linear-gradient(rgba(50,50,50,.25), rgba(0,0,0,.5)););
+
 }
 
 @media (min-width: 700px) {
 	.coverPhoto {
 		height: 500px;
-		line-height: 500px;
 	}
 }
 
 .coverPhotoContent {
-	display: inline-block;
-	vertical-align: middle;
-	line-height: normal;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px; /* Gives avatar breathing space */
 }
 
 .coverPhoto h2 {
@@ -436,6 +464,26 @@ footer {
 }
 
 /***** Content *****/
+
+.postTitle {
+	font-size: 3.6rem;
+}
+
+@media (min-width: 550px) {
+	.postTitle { 
+		font-size: 4.2rem; 
+	}
+}
+
+#post h2 {
+	color: #226089;
+}
+
+#post img {
+	max-width: 100%;
+	height: auto;
+	margin: 15px auto;
+}
 
 .introduction {
 	font-size: 2rem;
@@ -558,14 +606,36 @@ footer {
 	float: right;
 }
 
-/* Scrolling fix */
+/*** Cover photo author box ***/
 
-:target:before {
-    content: "";
-    display: block;
-    height: 114px;
-    margin: -62px 0 0;
-	visibility: hidden;
-	    -webkit-background-clip: content-box;
-    background-clip: content-box;
+
+.coverPhotoTag {
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 15px;
+	display: block;
 }
+
+.coverPhotoAuthorBox {
+	text-align: center;
+	margin: -36px auto 36px auto;
+	font-weight: bold;
+}
+
+.coverPhotoAuthorBox img {
+	width: 72px; 
+	margin: 0 auto .5em auto;
+	border: 3px solid #fff;
+	display: block;
+}
+
+.coverPhotoAuthorBox a {
+	text-decoration: none;
+	color: #333;
+}
+
+.coverPhotoAuthorBox a:hover {
+	color: #666;
+}
+
