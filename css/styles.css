@@ -482,7 +482,7 @@ footer {
 #post img {
 	max-width: 100%;
 	height: auto;
-	margin: 15px auto;
+	margin: 1.5rem auto;
 }
 
 .introduction {
@@ -492,6 +492,22 @@ footer {
 .button-primary {
 	background-color: #226089;
 	color: #fff;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-bottom: 1.5rem;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 /***** BLOG STYLES *****/
@@ -610,7 +626,7 @@ footer {
 
 
 .coverPhotoTag {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 15px;
@@ -639,3 +655,43 @@ footer {
 	color: #666;
 }
 
+#postWidget {
+	margin-bottom: 3rem;
+}
+
+#postWidget span {
+	color: #777777;
+	display: block;
+}
+
+#postWidget a {
+	color: #226089;
+	text-decoration: none;
+}
+
+#postWidget i, #authorBox i {
+	margin-right: 0.5em;
+}
+
+#authorBox {
+	background-color: #ededed;/*#d2cbc5*/
+	padding: 15px 30px;
+	text-align: left;
+	margin-top: 30px;
+}
+
+#authorBox p a {
+	color: #226089;
+	text-decoration: none;
+}
+
+.authorLink {
+	margin: -51px auto 1.5rem;
+	padding-top: -72px;
+	display: block;
+}
+
+#comments {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
