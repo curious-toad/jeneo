@@ -551,6 +551,7 @@ footer {
 	}
 }
 
+/** removed as breaks alignment **
 .postCard:first-child {
     margin-left: 0; } /* Simulates Skeleton columns */
 
@@ -618,8 +619,15 @@ footer {
 	color: #777777;
 }
 
-.postCardTag {
+.postCardDate {
 	float: right;
+}
+
+.postCardIcon {
+	padding-right: 0.25em;
+	display: inline-block; 
+	width:1.25em;
+	text-align:center;
 }
 
 /*** Cover photo author box ***/
@@ -694,4 +702,37 @@ footer {
 #comments {
 	margin-top: 30px;
 	margin-bottom: 60px;
+}
+
+/***** EVENTS STYLES *****/
+
+.eventInfo {
+	border-top: 2px solid #ccc; 
+	padding-top: 30px; 
+	margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+	.eventBookButton {
+		width: 100%;
+	}
+}
+
+.eventDetails {
+	font-size: 1.75rem;
+}
+
+@media (max-width: 750px) {
+	.eventDetails {
+		margin-bottom: .5em;
+	}
+}
+
+.agendaTable thead {
+	display: none;
+}
+
+.agendaTime {
+	font-weight: bold;
+	font-size: 2rem;
 }
