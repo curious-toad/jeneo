@@ -29,13 +29,41 @@
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/skeleton.css" />
 	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/nav-styles.css" />
 
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="images/favicon.png" />
 
 </head>
 <body>
-	<!-- Nav -->
+
+	<!-- Header -->
+	<header class="u-full-width">
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns">
+					<!-- Brand -->
+					<a id="siteLogo" href="index.html" title="Jeneo">
+						<img src="./images/jeneo-logo-200px.png" alt="Jeneo">
+					</a>
+					<!-- Navigation -->
+					<label class="btn" for="toggle" onclick>Menu <i class="fa fa-bars" aria-hidden="true" alt="Menu"></i></label>
+					<input id="toggle" type="checkbox" />
+					
+					<nav>
+						<ul id="navigation">
+							<li class="navigationHiddenItem"><a href="index.html" title="#title">Home</a></li>
+							<li><a href="events.html" title="#title">Events</a></li>
+							<li class="current"><a href="blog-home.html" title="#title">Blog</a></li>
+							<li><a href="index.html#getInvolved" title="#title">Get Involved</a></li>
+							<li id="close"><label for="toggle">Close</label></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	
 	<!-- Hero -->
 	<section id="hero" class="u-full-width fullheight homepage">
 	<div class="container">
@@ -171,7 +199,7 @@
 					<p>David has been involved with Borrow My Doggy, Hyperloop and E-Fundamentals, to name just a few. He was previously LinkedIn European Business Leader of the Year.</p>
 					</div>
 				</div>
-				<div class="six columns" style="margin-bottom: 15px;">
+				<div class="six columns" style="margin-bottom: 30px;">
 					<img class="avatar" src="./images/kirsty.jpg" alt="Kirsty Devlin" />
 					<h3 class="editable">Kirsty Devlin</h3>
 					<h5 class="editable">Board Member</h5>
@@ -235,7 +263,7 @@
 			<div class="twelve columns">
 				<h2 class="editable">Events</h2>
 				<p class="editable">Jeneo regularly runs 'Women in Tech Speak Up' events aimed at fostering a strong and diverse community of speakers.</p>
-				<a class="button editable" href="https://www.eventbrite.co.uk/e/women-in-tech-speak-up-jeneo-xmas-launch-party-tickets-37155754863" title="Upcoming events" target="_blank">See what's coming up</a>
+				<a class="button editable" href="events.html" title="Upcoming events">See what's coming up</a>
 			</div>
 		</div>
 	</div>
@@ -302,24 +330,70 @@
 	</section>
 
 	<!-- Footer -->
-	<section id="footer" class="u-full-width homepage">
+	
+	<footer id="footer" class="u-full-width">
 		<div class="container">
 			<div class="row">
-				<div class="twelve columns">
-					<!-- Footer links -->
-					<!--<h6>Links</h6>-->
+				<!-- Contact Links -->				
+				<div class="four columns">
+					<h3>Get in touch</h3>
+					<ul class="footerLinks">
+						<li><a href="mailto:hello@jeneo.co.uk" title="Email Jeneo"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i>hello@jeneo.co.uk</a></li>
+						<li><a href="https://twitter.com/Jeneoltd" title="Follow Jeneo on Twitter"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i>Twitter</a></li>
+						<li><a href="https://www.facebook.com/Jeneo-1398357766952255/" title="Like Jeneo on Facebook"><i class="fa fa-facebook-square" aria-hidden="true" alt="Facebook"></i>Facebook</a></li>
+					</ul>
+				</div>
+				<!-- Newsletter Signup -->
+				<div class="four columns">
+					<h3>Subscribe</h3>
+					
+					<form>
+						<div class="row">
+							
+							<div id="footerMailchimpWidget">
+								<form action="https://jeneo.us17.list-manage.com/subscribe/post?u=24e1fad29fef10abeb60ddbc5&amp;id=059e1bf125" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								</form>
+								<input type="email" value="" name="EMAIL" class="u-full-width required email" id="footerMailchimpInput" placeholder="Your email address" style="color: #111;" />
+								
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>
+								
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_24e1fad29fef10abeb60ddbc5_059e1bf125" tabindex="-1" value=""></div>
+								
+								<!-- submit button -->
+								
+								<input type="submit" value="&gt;" name="subscribe" id="footerMailchimpButton" class="button" />
+								
+							</div><!--/footerMailchimpWidget-->
+							
+						</div>
+						
+					</form>
+					
+				</div>
+					
+				<!-- Useful Links -->
+				<div class="four columns">
+					<h3>Links</h3>
 					<ul class="footerLinks">
 						<li><a href="#" title="Cookies & Privacy">Cookies &amp; Privacy</a></li>
 						<li><a href="#" title="Terms & Conditions">Terms &amp; Conditions</a></li>
 						<li><a href="#" title="Sitemap">Sitemap</a></li>
 					</ul>
-					<span class="legal">&copy; 2017 Jeneo. All rights reserved. Jeneo is a limited company <a href="https://beta.companieshouse.gov.uk/company/10920560" title="View Jeneo at Companies House" target="_blank">registered</a> in England and Wales, no. 10920560.</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<span class="legal">&copy; 2018 Jeneo. All rights reserved. Jeneo is a limited company <a href="https://beta.companieshouse.gov.uk/company/10920560" title="View Jeneo at Companies House" target="_blank">registered</a> in England and Wales, no. 10920560.</span>
 					<br />
 					<span class="websiteCredit">Website design &amp; development by <a href="https://www.curioustoad.co.uk" title="Curious Toad" rel="nofollow">Curious Toad</a>.</span>
 				</div>
 			</div>
 		</div>
-	</section>
+	</footer>
 	
 <!-- End Document -->
 <!-- Scripts -->

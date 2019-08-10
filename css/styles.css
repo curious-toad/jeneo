@@ -60,6 +60,22 @@ html, body {
   width: 100%;
 }
 
+.margin-top-60 { /* Pushes content down to accomodate header */
+	margin-top: 60px;
+}
+
+/* Scrolling fix - adds additional headroom for anchor links to accomodate header */
+
+:target:before {
+    content: "";
+    display: block;
+    height: 114px;
+    margin: -62px 0 0;
+	visibility: hidden;
+	-webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+
 /* Typography */
 
 body {
@@ -114,7 +130,7 @@ h1, h2, h3 {
 }
 
 #hero .logo {
-	max-width: 200px;
+	max-width: 150px;
 	height: auto;
 	margin-bottom: 20px;
 }
@@ -122,6 +138,7 @@ h1, h2, h3 {
 @media (min-width: 701px) {
 	#hero .logo {
 		margin-bottom: 40px;
+		max-width: 200px;
 	}
 }
 
@@ -333,6 +350,141 @@ h1, h2, h3 {
 
 /***** SITEWIDE STYLES *****/
 
+/***** Header *****/
+
+header {
+	position: fixed;
+	z-index: 1; /* allows for header to appear above content, but below menu */
+	height: 62px;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	background-color: #226089;
+}
+
+#siteLogo {
+	text-decoration: none;
+	float: left;
+}
+
+#siteLogo img {
+	height: 50px;
+	width: auto;
+	padding: 0;
+	margin: 5px 0;
+	vertical-align: middle;
+}
+
+nav {
+	float: right;
+	margin: 19px 0;
+}
+
+/***** Footer *****/
+
+footer {
+	text-align: left;
+	background-color: #111;
+	color: #eee;
+	padding: 20px 10px;
+}
+
+.footerLinks {
+	list-style: none;
+	line-height: 1.5rem;
+}
+
+.footerLinks a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footerLinks i {
+	padding-right: 0.5em;
+}
+
+.legal, .websiteCredit {
+	font-size: 0.75em;
+}
+
+#footerMailchimpInput {
+	width: 75%;
+	float: left;
+}
+
+#footerMailchimpButton {
+	width: 15%;
+	float: right;
+	color: #fff;
+	background-color: #333;
+	border: none;
+	text-align: left;
+}
+
+/***** Cover photos *****/
+
+.coverPhoto {
+	position: relative;
+	background-color: #d2cbc5;
+	background-size: cover;
+	height: 400px;
+	text-align: center;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	
+}
+
+.coverPhotoOverlay:before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(0,0,0,.4);
+  background: linear-gradient(rgba(50,50,50,.25), rgba(0,0,0,.5)););
+
+}
+
+@media (min-width: 700px) {
+	.coverPhoto {
+		height: 500px;
+	}
+}
+
+.coverPhotoContent {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px; /* Gives avatar breathing space */
+}
+
+.coverPhoto h2 {
+	text-transform: none;
+}
+
+/***** Content *****/
+
+.postTitle {
+	font-size: 3.6rem;
+}
+
+@media (min-width: 550px) {
+	.postTitle { 
+		font-size: 4.2rem; 
+	}
+}
+
+#post h2 {
+	color: #226089;
+}
+
+#post img {
+	max-width: 100%;
+	height: auto;
+	margin: 1.5rem auto;
+}
+
 .introduction {
 	font-size: 2rem;
 }
@@ -342,21 +494,245 @@ h1, h2, h3 {
 	color: #fff;
 }
 
-#footer {
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+	margin-bottom: 1.5rem;
+}
+
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/***** BLOG STYLES *****/
+
+.postList { /* Main flex container for list of posts */
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 60px;
+	list-style-type: none;
+}
+
+.postCard { /* Set to one columns for small sizes as a base*/
+	/* Structure */
+	padding: 0;
+	flex-grow: 1;
+	flex-basis: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	flex-direction: column;
+	display: flex; /* allows child elements to use flexbox too */
+	
+	/* Styling */
+	max-width: 100%;
+	padding-bottom: 25px;
+	border-bottom: 2px solid #ccc;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 600px) { /* Switch to two columns */
+	.postCard {
+		/* Structure */
+		max-width: 46%;
+		flex-basis: 46%;
+		margin-left: 2%;
+		margin-right: 2%;
+		
+		/* Styling */
+		padding-bottom: 25px;
+		border-bottom: 2px solid #ccc;
+		margin-bottom: 30px;
+	}
+}
+
+/** removed as breaks alignment **
+.postCard:first-child {
+    margin-left: 0; } /* Simulates Skeleton columns */
+
+/* Images */
+
+.postCardImage {
+	width: 100%;
+	height: 180px;
+	margin-bottom: 30px;
+}
+
+@media (min-width: 550px) {
+	.postCardImage{
+		height: 250px;
+	}
+	.postCardContent h3 {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 600px) {
+	.postCardImage {
+		height: 200px;
+	}
+}
+
+@media (min-width: 900px) {
+	.postCardImage {
+		height: 250px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.postCardImage {
+		height: 300px;
+	}
+}
+
+.postCardImage img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+/* Text */
+
+.postCardContent {
+	width: 100%;
+}
+
+@media (min-width: 550px) {
+	.postCardContent h3 {
+		font-size: 3rem;
+	}
+}
+
+.postCard a {
+	color: #226089;
+	text-decoration: none;
+}
+
+.postCardInfo {
+	margin-top: auto;
+	width: 100%;
+	color: #777777;
+}
+
+.postCardDate {
+	float: right;
+}
+
+.postCardIcon {
+	padding-right: 0.25em;
+	display: inline-block; 
+	width:1.25em;
+	text-align:center;
+}
+
+/*** Cover photo author box ***/
+
+
+.coverPhotoTag {
+	/*text-transform: uppercase;*/
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 15px;
+	display: block;
+}
+
+.coverPhotoAuthorBox {
+	text-align: center;
+	margin: -36px auto 36px auto;
+	font-weight: bold;
+}
+
+.coverPhotoAuthorBox img {
+	width: 72px; 
+	margin: 0 auto .5em auto;
+	border: 3px solid #fff;
+	display: block;
+}
+
+.coverPhotoAuthorBox a {
+	text-decoration: none;
+	color: #333;
+}
+
+.coverPhotoAuthorBox a:hover {
+	color: #666;
+}
+
+#postWidget {
+	margin-bottom: 3rem;
+}
+
+#postWidget span {
+	color: #777777;
+	display: block;
+}
+
+#postWidget a {
+	color: #226089;
+	text-decoration: none;
+}
+
+#postWidget i, #authorBox i {
+	margin-right: 0.5em;
+}
+
+#authorBox {
+	background-color: #ededed;/*#d2cbc5*/
+	padding: 15px 30px;
 	text-align: left;
-	background-color: #111;
-	color: #eee;
-	font-size: 0.75em;
-	padding: 20px 10px;
+	margin-top: 30px;
 }
 
-.footerLinks {
-	list-style: none;
-	float: left;
-	padding-right: 3em;
+#authorBox p a {
+	color: #226089;
+	text-decoration: none;
 }
 
-.footerLinks li {
-	display: inline;
-	padding-right: 1em;
+.authorLink {
+	margin: -51px auto 1.5rem;
+	padding-top: -72px;
+	display: block;
+}
+
+#comments {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+/***** EVENTS STYLES *****/
+
+.eventInfo {
+	border-top: 2px solid #ccc; 
+	padding-top: 30px; 
+	margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+	.eventBookButton {
+		width: 100%;
+	}
+}
+
+.eventDetails {
+	font-size: 1.75rem;
+}
+
+@media (max-width: 750px) {
+	.eventDetails {
+		margin-bottom: .5em;
+	}
+}
+
+.agendaTable thead {
+	display: none;
+}
+
+.agendaTime {
+	font-weight: bold;
+	font-size: 2rem;
 }

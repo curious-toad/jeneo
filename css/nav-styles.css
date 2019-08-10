@@ -1,0 +1,178 @@
+/* Provided by https://webdesign.tutsplus.com/tutorials/examining-responsive-navigation-toggle-patterns--pre-57058 */
+
+.btn {
+	position: absolute;
+	top: 0px;
+	right: 5%;
+	z-index: 100;
+	height: 100%;
+	padding: 1.25em 2%;
+	color: #fff;
+	/*border-radius: 0.25em;*/
+	background-color: #226089;
+}
+ 
+.btn:hover {
+	background-color: #226089; /*#2872a4; now set to prevent sticky hover on touch */
+}
+
+#toggle {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+#navigation {
+	position: absolute;
+	top: 60px;
+	left: 0;
+	z-index: 10;
+	
+	list-style: none;
+	text-align: left;
+}
+
+@media (max-width: 699px) { /* Wrapped in media query to fix desktop width bug */
+ 
+#navigation {
+	width: 100%;
+	}
+}
+ 
+ 
+#navigation a {
+	height: 0;
+	line-height: 2.75em; /*Changed from 0 to improve close animation*/
+	display: block;
+	border-bottom-width: 0;
+	background: #444;
+	padding: 0 0 0 5%;
+	overflow: hidden;
+	color:#efefef;
+	text-decoration: none;
+ 
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+@media (max-width: 699px) { /* Wrapped in media query to fix mobile rotation bug */
+	#toggle:checked ~ nav #navigation {
+	z-index: 101;
+	-webkit-box-shadow: 0px 5px 5px 3px #333;
+	-moz-box-shadow: 0px 5px 5px 3px #333;
+	-ms-box-shadow: 0px 5px 5px 3px #333;
+	-o-box-shadow: 0px 5px 5px 3px #333;
+	box-shadow: 0px 5px 5px 3px #333;
+}
+
+#toggle:checked ~ nav #navigation a {
+	line-height: 3em;
+	height: 3em;
+	border-top: 1px solid #777;
+	position: relative;
+	z-index: 1;
+		 
+}/*fucker!*/
+
+#toggle:checked ~ nav #navigation a:hover {
+	background: #555;
+}
+}
+ 
+#toggle:checked ~ nav #navigation #close {
+	position: relative;
+	z-index: 0;
+}
+ 
+#toggle:checked ~ nav #navigation #close label {
+	background: transparent;
+	border-bottom: 0;
+	position: absolute;
+	top: -101em;
+	bottom: -101em;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+	.btn {
+		display: none;
+		}
+		 
+	#toggle:checked ~ nav #navigation, #navigation {
+		top: 2em;
+		right: 2%;
+		left: 66%;
+		-webkit-box-shadow: 0;
+		-moz-box-shadow: 0;
+		-ms-box-shadow: 0;
+		-o-box-shadow: 0;
+		box-shadow: 0;
+		background: none; /*check if fixed on mobile resize */
+		background-color: #226089; /*check if fixed on mobile resize */
+		border: none; /*check if fixed on mobile resize */
+}
+
+#navigation li {
+	display: inline;
+	float: left;
+}
+ 
+#navigation li.current a {
+	color: /*#7b7776;*/ #fff;
+	font-weight: bold;
+}
+				 
+#navigation a {
+	line-height: 1.5em;
+	height: 1.5em;
+	display: inline;
+	float: right;
+	background: none;
+	background-color: #226089;
+	padding: 0 1.15em;
+	border-bottom: 0
+}
+				 
+#navigation #close {
+	display: none;
+}
+}
+
+#navigation #close {
+	display: none;
+} /* Added again to overwrite and apply for all sizes */
+
+
+/* fix for iOS and Android */
+
+body {
+	-webkit-animation: bugfix infinite 1s;
+}
+ 
+@-webkit-keyframes bugfix { 
+	from {padding:0;} 
+	to {padding:0;} 
+}
+
+/* MY OWN SHIT */
+
+@media (min-width: 700px) {
+	#navigation li.navigationHiddenItem { /* Hides items on desktop view */
+		display: none;
+	}
+	
+	#navigation { /* Fixes position of desktop navigation */
+	position: static;
+	}
+}
+
+#navigation li {
+	margin-bottom: 0; /* Override default Skeleton style */
+}
