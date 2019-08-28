@@ -1,0 +1,70 @@
+<!-- Footer -->
+	
+<footer id="footer" class="u-full-width">
+		<div class="container">
+			<div class="row">
+
+                <!-- Useful Links -->
+				<div class="four columns">
+                        <h3>Links</h3>
+                        <ul class="footerLinks">
+							{% for link in site.data.footer-links %}
+							<li><a href="{{ link.url }}">{{ link.title }}</a></li>
+							{% endfor %}
+                        </ul>
+                    </div>
+
+				<!-- Contact Links -->				
+				<div class="four columns">
+					<h3>Get in touch</h3>
+					<ul class="footerLinks">
+						<li><a href="mailto:{{ site.email }}" title="Email Jeneo"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i>{{ site.email }}</a></li>
+						<li><a href="https://twitter.com/Jeneoltd" title="Follow Jeneo on Twitter"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i>Twitter</a></li>
+						<li><a href="https://www.facebook.com/Jeneo-1398357766952255/" title="Like Jeneo on Facebook"><i class="fa fa-facebook-square" aria-hidden="true" alt="Facebook"></i>Facebook</a></li>
+					</ul>
+				</div>
+				<!-- Newsletter Signup -->
+				<div class="four columns">
+					<h3>Subscribe</h3>
+					
+					<form>
+						<div class="row">
+							
+							<div id="footerMailchimpWidget">
+								<form action="https://jeneo.us17.list-manage.com/subscribe/post?u=24e1fad29fef10abeb60ddbc5&amp;id=059e1bf125" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								</form>
+								<input type="email" value="" name="EMAIL" class="u-full-width required email" id="footerMailchimpInput" placeholder="Your email address" style="color: #111;" />
+								
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>
+								
+								<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_24e1fad29fef10abeb60ddbc5_059e1bf125" tabindex="-1" value=""></div>
+								
+								<!-- submit button -->
+								
+								<input type="submit" value="&gt;" name="subscribe" id="footerMailchimpButton" class="button" />
+								
+							</div><!--/footerMailchimpWidget-->
+							
+						</div>
+						
+					</form>
+					
+				</div>
+					
+				
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<span class="legal">&copy; {{ site.time | date: '%Y' }} Jeneo. All rights reserved. Jeneo is a limited company <a href="https://beta.companieshouse.gov.uk/company/10920560" title="View Jeneo at Companies House" target="_blank">registered</a> in England and Wales, no. 10920560.</span>
+					<br />
+					<span class="websiteCredit">Website design &amp; development by <a href="https://www.curioustoad.co.uk" title="Curious Toad" rel="nofollow">Curious Toad</a>.</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+<!-- End Document -->

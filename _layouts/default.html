@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+
+	{% include navbar.html %}
+
+	{% include cover-photo.html %}
+	
+	<div class="container margin-top-60">
+		<div class="row">
+			<div class="ten columns offset-by-one">
+				<!-- content-->
+                {{ content }}
+				<!--/ content-->
+			</div>
+		</div>
+	</div>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+</body>
+</html>
