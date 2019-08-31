@@ -43,6 +43,17 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Defaults
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+      author: charlotte_jee
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

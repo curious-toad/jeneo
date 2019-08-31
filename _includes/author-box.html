@@ -1,0 +1,18 @@
+{% assign author = site.data.authors[page.author] %}
+
+<div class="row">
+    <div class="eight columns offset-by-two">
+        <div id="authorBox">
+            <div class="authorLink coverPhotoAuthorBox">
+                <a href="#author" title="See all posts by {{author.name }}"><img class="avatar" src="{{ author.image }}" alt="{{ author.name }}">
+                <span>{{ author.name }}</span></a>
+            </div>
+                <p>{{ author.bio }}</p>
+                <p>Connect with {{ author.name }}: 
+                <a href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }} on Twitter"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i><!--Twitter--></a>
+                <a href="https://www.linkedin.com/in/{{ author.linkedin }}" title="{{ author.name }} on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true" alt="LinkedIn"></i><!--LinkedIn--></a>
+                <a href="mailto:{{ author.email }}" title="Email {{ author.name }}"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i><!--Email--></a>
+                </p>
+        </div>
+    </div>
+</div>

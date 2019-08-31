@@ -3,8 +3,12 @@ layout: post
 title:  "Rob test"
 date:   2019-08-21 10:31:39 +0100
 categories: jekyll update
+image: /images/blog/mobile-app-grid.jpg
+image-alt-text: Home screen on a mobile phone
+author: cathy_white
+video-embed-link: https://www.youtube.com/embed/00K0AWbMe_U
 ---
-#Here is a little test
+# Here is a little test
 If Jekyll is running fine, then this should appear.
-##Fucking finally!
+## Fucking finally!
 It's been a slog...

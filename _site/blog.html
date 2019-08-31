@@ -28,16 +28,16 @@
     
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Titillium+Web:400,600" rel="stylesheet" type="text/css" /> 
-        <link href="../css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <link href="http://localhost:4000/css/font-awesome.css" rel="stylesheet" type="text/css" />
     
         <!-- CSS -->
-        <link rel="stylesheet" href="../css/normalize.css" />
-        <link rel="stylesheet" href="../css/skeleton.css" />
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link rel="stylesheet" href="../css/nav-styles.css" />
+        <link rel="stylesheet" href="http://localhost:4000/css/normalize.css" />
+        <link rel="stylesheet" href="http://localhost:4000/css/skeleton.css" />
+        <link rel="stylesheet" href="http://localhost:4000/css/styles.css" />
+        <link rel="stylesheet" href="http://localhost:4000/css/nav-styles.css" />
     
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="../images/favicon.png" />
+        <link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.png" />
     
     </head>
 
@@ -50,7 +50,7 @@
 				<div class="twelve columns">
 					<!-- Brand -->
 					<a id="siteLogo" href="index.html" title="Jeneo">
-						<img src="../images/jeneo-logo-200px.png" alt="Jeneo">
+						<img src="/images/jeneo-logo-200px.png" alt="Jeneo">
 					</a>
 					<!-- Navigation -->
 					<label class="btn" for="toggle" onclick>Menu <i class="fa fa-bars" aria-hidden="true" alt="Menu"></i></label>
@@ -74,40 +74,81 @@
 		</div>
 	</header>
 
-	<!-- Generic cover photo -->
-<section id="genericHero" class="u-full-width coverPhoto coverPhotoOverlay margin-top-60" style="height: 50%; background-image: url(); background-color: #ccc; background-position: center;"><!--background-image: url(./images/blog/blog-cover-photo.jpg);-->
+	
+
+<!-- Section cover photo -->
+<section id="sectionHero" class="u-full-width coverPhoto margin-top-60" style="background-image: url(/images/blog/blog-cover-photo.jpg);">
     <div class="container">
         <div class="row">
             <div class="eight columns offset-by-two">
                 <div class="coverPhotoContent">
                     <h1>Blog Home</h1>
+                    <h2>Here is the subheading which I can now edit</h2>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 	
-	<div class="container margin-top-60">
+    <!-- content-->
+    <!-- Blog post list -->
+	
+<div class="container">
 		<div class="row">
-			<div class="ten columns offset-by-one">
-				<!-- content-->
-                
-
-<ul class="myposts">
-
-    <li><a href="/jekyll/update/2019/08/21/welcome-to-jekyll.html">Welcome to Jekyll!</a>
-    <span class="postDate">Aug 21, 2019</span>
-    </li>
-
-    <li><a href="/jekyll/update/2019/08/21/rob-test.html">Rob test</a>
-    <span class="postDate">Aug 21, 2019</span>
-    </li>
-
-</ul>
-				<!--/ content-->
-			</div>
+			<ul class="postList">
+            
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="/jekyll/update/2019/08/21/welcome-to-jekyll.html" title="Welcome to Jekyll!"><img src="/images/blog/office-space.jpg" alt="An office space with fancy computers"></a>
+					</div>
+					<div class="postCardContent">
+						<a href="/jekyll/update/2019/08/21/welcome-to-jekyll.html" title="Welcome to Jekyll!"><h3>Welcome to Jekyll!</h3></a>
+						<p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...</p>
+						</div>
+					<div class="postCardInfo">
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/jekyll" title="View all posts in the Jekyll category">Jekyll</a></span>
+                        <span class="postCardDate">21 Aug 2019</span>
+					</div>
+				</li>
+			
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="/jekyll/update/2019/08/21/rob-test.html" title="Rob test"><img src="/images/blog/mobile-app-grid.jpg" alt="Home screen on a mobile phone"></a>
+					</div>
+					<div class="postCardContent">
+						<a href="/jekyll/update/2019/08/21/rob-test.html" title="Rob test"><h3>Rob test</h3></a>
+						<p>Here is a little test
+If Jekyll is running fine, then this should appear.
+Fucking finally!
+It’s been a slog…
+</p>
+						</div>
+					<div class="postCardInfo">
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/jekyll" title="View all posts in the Jekyll category">Jekyll</a></span>
+                        <span class="postCardDate">21 Aug 2019</span>
+					</div>
+				</li>
+			
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="/iot/2018/04/03/Another-test-here.html" title="I've put another test file in here!"><img src="" alt=""></a>
+					</div>
+					<div class="postCardContent">
+						<a href="/iot/2018/04/03/Another-test-here.html" title="I've put another test file in here!"><h3>I've put another test file in here!</h3></a>
+						<p>Ex nulla est anim et occaecat proident incididunt sunt veniam. Non consectetur laboris eiusmod excepteur nulla sint Lorem cillum duis. Veniam eu excepteur tempor minim tempor minim veniam. Mollit sunt anim et eiusmod ad minim irure aute qui occaecat eiusmod eiusmod pariatur ut. Commodo ullamco ea elit elit est culpa...</p>
+						</div>
+					<div class="postCardInfo">
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/iot" title="View all posts in the Iot category">Iot</a></span>
+                        <span class="postCardDate">3 Apr 2018</span>
+					</div>
+				</li>
+				
+			</ul>
 		</div>
 	</div>
+    <!--/ content-->		
 
     <!-- Footer -->
 	
