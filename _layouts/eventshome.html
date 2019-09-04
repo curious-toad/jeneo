@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<!-- Events list -->
+	
+<div class="container">
+		<div class="row">
+			<ul class="postList">
+            {% for event in site.events %}
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="{{ event.url }}" title="{{ event.title}}"><img src="{{ event.image }}" alt="{{ event.image-alt-text }}"></a>
+					</div>
+					<div class="postCardContent">
+                        <a href="{{ event.url }}" title="{{ event.title}}"><h3>{{ event.title}}</h3></a>
+                        <p><strong>
+                            <i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
+                            {{ event.start-date | date: "%a %-d %B %R"}}</br>
+                            <i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Date"></i>
+                            {{ event.venue }}, {{ event.town }}
+                        </strong></p>
+						<p>{{ event.content | markdownify | strip_html | truncatewords: 50 }}</p>
+						</div>
+					<div class="postCardInfo">
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/{{event.categories[0] | slugize }}" title="View all posts in the {{ event.categories[0] | capitalize }} category">{{ event.categories[0] | capitalize }}</a></span>
+					</div>
+				</li>
+			{% endfor %}	
+			</ul>
+		</div>
+	</div>

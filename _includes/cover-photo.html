@@ -1,7 +1,7 @@
 {% if page.sub-heading %}
 
 <!-- Section cover photo -->
-<section id="sectionHero" class="u-full-width coverPhoto margin-top-60" style="background-image: url({{ page.header-image }});">
+<section id="sectionHero" class="u-full-width coverPhoto margin-top-60" style="background-image: url({{ page.header-image }}); background-postion: center; background-size: cover;>
     <div class="container">
         <div class="row">
             <div class="eight columns offset-by-two">
@@ -14,7 +14,7 @@
     </div>
 </section>
 
-{% elsif page.is_post %}
+{% elsif page.is_post or page.is_event %}
 
 <!-- Blog cover photo -->
 <section class="u-full-width coverPhoto coverPhotoOverlay" style="background-image: url({{ page.image }});">
@@ -36,7 +36,13 @@
         <div class="row">
             <div class="eight columns offset-by-two">
                 <div class="coverPhotoContent">
-                    <h1>{{ page.main-heading }}</h1>
+                    <h1>
+                    {% if page.main-heading %}
+                        {{ page.main-heading }}
+                    {% else %}
+                    {{ page.title }}
+                    {% endif %}
+                    </h1>
                 </div>
             </div>
         </div>

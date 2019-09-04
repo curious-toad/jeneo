@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Test page for dev work
 description: Here is a test page, showing that content pulls through correctly.
 main-heading: Here is a lovely hero heading

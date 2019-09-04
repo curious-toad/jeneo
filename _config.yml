@@ -37,11 +37,18 @@ social:
     - https://twitter.com/jeneoltd
     - https://www.facebook.com/Jeneo-1398357766952255
 
+# Collections
+collections:
+  events:
+    output: true
+
 # Build settings
 #theme: jeneo
 plugins:
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-archives
 
 # Defaults
 
@@ -53,6 +60,13 @@ defaults:
     values:
       is_post: true # automatically set is_post=true for all posts
       author: charlotte_jee
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: events   # limit to posts
+    values:
+      is_event: true # automatically set is_event=true for all posts
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

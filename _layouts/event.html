@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<div class="container">
+		<div id="eventCTA" class="row margin-top-60">
+			<div class="six columns offset-by-two ">
+				<div class="eventDetails">
+					<span>
+						<i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
+						Tue 12 December 18:00</br>
+						<i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Location"></i>
+						MOO, London &ndash; <a href="#map" title="View map">View on map</a></br>
+						<i class="postCardIcon fa fa-pound-sign" aria-hidden="true" alt="Price">£</i>
+                        {% if page.price > 0 %}
+                        {{ page.price }}
+                        {% else %}
+                        Free
+                        {% endif %}
+					</span>
+				</div>
+			</div>
+			<div class="two columns">
+				<a class="button button-primary eventBookButton" href="https://www.eventbrite.co.uk/e/women-in-tech-speak-up-jeneo-xmas-launch-party-tickets-37155754863" target="_blank">Book now</a>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="eight columns offset-by-two eventInfo">
+				<div id="post">
+
+                    <p class="introduction">{{ page.introduction }}</p>
+
+                    {{ content }}
+
+                </div>
+            </div>
+        </div><!--/row-->
+
+        {% include event-agenda.html %}
+
+        {% include event-speakers.html %}
+
+        {% include event-map.html %}
+
+        <div class="row">
+                <div class="eight columns offset-by-two">
+                    <div id="postWidget">
+                            {% if page.tags.size > 0 %}
+                            Tag{% if page.tags.size > 1 %}s{% endif %}:
+                            {{ page.tags | sort | join: ", " }}
+                          {% endif %}
+                        <span>Tags: <a href="#tag1" title="#tag1">Workplace</a>, <a href="#tag2" title="#tag2">Technology</a>, <a href="#tag3" title="#tag3">Future</a></span>
+                        <span>Subscribe <a href="#rss" title="Subscribe via RSS">via RSS</a></span>
+                        <span>Share: 
+                            <a href="#shareFacebook" title="Share article via Facebook"><i class="fa fa-facebook-square" aria-hidden="true" alt="Facebook"></i><!--Facebook--></a>
+                            <a href="shareTwitter" title="Share article via Twitter"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i><!--Twitter--></a>
+                            <a href="shareLinkedIn" title="Share article via LinkedIn"><i class="fa fa-linkedin" aria-hidden="true" alt="LinkedIn"></i><!--LinkedIn--></a>
+                            <a href="shareGoogle+" title="Share article via Google+"><i class="fa fa-google-plus-square" aria-hidden="true" alt="Google+"></i><!--Google+--></a>						
+                            <a href="shareEmail" title="Share article via Email"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i><!--Email--></a>
+                        </span>
+                    </div>
+                </div>
+        </div>
+
+
+
+</div><!--/container-->

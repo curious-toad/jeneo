@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<!-- Google Analytics -->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<!-- remove analytics script for dev --
-	----------------------------------------
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110986025-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+        <!-- Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- remove analytics script for dev --
+        ----------------------------------------
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110986025-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'UA-110986025-1');
+        </script>
+        -----------------------------------------
+        -->
+    
+        <!-- Basic Page Needs -->
+        <meta charset="utf-8" />
+        <title>Events</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href="http://localhost:4000/events.html">
+    
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Titillium+Web:400,600" rel="stylesheet" type="text/css" /> 
+        <link href="http://localhost:4000/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://localhost:4000/css/normalize.css" />
+        <link rel="stylesheet" href="http://localhost:4000/css/skeleton.css" />
+        <link rel="stylesheet" href="http://localhost:4000/css/styles.css" />
+        <link rel="stylesheet" href="http://localhost:4000/css/nav-styles.css" />
+    
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="http://localhost:4000/images/favicon.png" />
+    
+    </head>
 
-	  gtag('config', 'UA-110986025-1');
-	</script>
-	-----------------------------------------
-	-->
-
-	<!-- Basic Page Needs -->
-	<meta charset="utf-8" />
-	<title>Jeneo Events</title>
-	<meta name="description" content="Some description here" />
-	<link rel="canonical" href="https://www.jeneo.co.uk/events" />
-
-	<!-- Mobile Specific Metas -->
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Titillium+Web:400,600" rel="stylesheet" type="text/css" /> 
-	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-
-	<!-- CSS -->
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/skeleton.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-	<link rel="stylesheet" href="css/nav-styles.css" />
-	
-
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/favicon.png" />
-
-</head>
 <body>
 
 	<!-- Header -->
-	<header class="u-full-width">
+<header class="u-full-width">
 		<div class="container">
 			<div class="row">
 				<div class="twelve columns">
 					<!-- Brand -->
 					<a id="siteLogo" href="index.html" title="Jeneo">
-						<img src="./images/jeneo-logo-200px.png" alt="Jeneo">
+						<img src="/images/jeneo-logo-200px.png" alt="Jeneo">
 					</a>
 					<!-- Navigation -->
 					<label class="btn" for="toggle" onclick>Menu <i class="fa fa-bars" aria-hidden="true" alt="Menu"></i></label>
@@ -58,9 +59,13 @@
 					<nav>
 						<ul id="navigation">
 							<li class="navigationHiddenItem"><a href="index.html" title="#title">Home</a></li>
-							<li><a href="events.html" title="#title">Events</a></li>
-							<li class="current"><a href="blog-home.html" title="#title">Blog</a></li>
-							<li><a href="index.html#getInvolved" title="#title">Get Involved</a></li>
+							
+                            <li><a href="/events/">Events</a></li>
+                            
+                            <li><a href="/blog/">Blog</a></li>
+                            
+                            <li><a href="/get-involved/">Get Involved</a></li>
+                            
 							<li id="close"><label for="toggle">Close</label></li>
 						</ul>
 					</nav>
@@ -69,88 +74,115 @@
 		</div>
 	</header>
 
-	<!-- Blog cover photo -->
-	<section id="blogHero" class="u-full-width coverPhoto coverPhotoOverlay margin-top-60" style="background-image: url(./images/events/adobe-speaker-199357227-flip.jpg); background-postion: center; background-size: cover;">
-		<div class="container">
-			<div class="row">
-				<div class="eight columns offset-by-two">
-					<div class="coverPhotoContent">
-						<h1>Events</h1>
-						<h2>We need a subheading here for events listings</h2>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	
-	<!-- Blog post list -->
+
+<!-- Section cover photo -->
+<section id="sectionHero" class="u-full-width coverPhoto margin-top-60" style="background-image: url(/images/events/adobe-speaker-199357227-flip.jpg); background-postion: center; background-size: cover;>
+    <div class="container">
+        <div class="row">
+            <div class="eight columns offset-by-two">
+                <div class="coverPhotoContent">
+                    <h1>Events Home</h1>
+                    <h2>Here is the subheading for events, which I can now edit</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 	
-	<div class="container">
+    <!-- content-->
+    <!-- Events list -->
+	
+<div class="container">
 		<div class="row">
 			<ul class="postList">
+            
 				<li class="postCard">
 					<div class="postCardImage">
-						<a href="event-listing.html" title="#posttitle"><img src="./images/events/women-in-tech.jpg" alt="Blog Featured Image"></a>
+						<a href="/events/second-event.html" title="A second test event"><img src="/images/blog/apple-fan.jpg" alt=""></a>
 					</div>
 					<div class="postCardContent">
-						<a href="event-listing.html" title="#posttitle"><h3>Women in Tech Speak Up: <br/>Jeneo Xmas Launch Party</h3></a>
-						<p><strong>
-							<i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
-							Tue 12 December 18:00</br>
-							<i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Date"></i>
-							MOO, London
-							</strong></p>
-						<p>Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.</p>
+                        <a href="/events/second-event.html" title="A second test event"><h3>A second test event</h3></a>
+                        <p><strong>
+                            <i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
+                            Tue 12 December 10:20</br>
+                            <i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Date"></i>
+                            Brighton Dome, Brighton
+                        </strong></p>
+						<p>Veniam laborum commodo culpa minim ut nulla incididunt anim ipsum aliquip nisi. Proident aliqua consectetur veniam irure irure proident cillum ut. Aliqua in et aliquip minim magna duis reprehenderit.
+</p>
 						</div>
 					<div class="postCardInfo">
-						<span><i class="postCardIcon fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="#category" title="#categorytitle">Women in Tech Speak Up</a></span>
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/mobile" title="View all posts in the Mobile category">Mobile</a></span>
 					</div>
 				</li>
+			
 				<li class="postCard">
 					<div class="postCardImage">
-						<a href="blog-post.html" title="#posttitle"><img src="./images/blog/apple-fan.jpg" alt="Blog Featured Image"></a>
+						<a href="/events/test-event.html" title="Test Event"><img src="/images/events/women-in-tech.jpg" alt=""></a>
 					</div>
 					<div class="postCardContent">
-						<a href="blog-post.html" title="#posttitle"><h3>Something about mobile<br/></h3></a>
-						<p><strong>
-							<i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
-							Thurs 16 November 10:00</br>
-							<i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Date"></i>
-							Location, City
-							</strong></p>
-						<p>Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.</p>
+                        <a href="/events/test-event.html" title="Test Event"><h3>Test Event</h3></a>
+                        <p><strong>
+                            <i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
+                            Wed 23 March 10:20</br>
+                            <i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Date"></i>
+                            MOO, London
+                        </strong></p>
+						<p>Here is some content for an event.
+</p>
 						</div>
 					<div class="postCardInfo">
-						<span><i class="postCardIcon fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="#category" title="#categorytitle">Event Category</a></span>
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/" title="View all posts in the  category"></a></span>
 					</div>
 				</li>
+			
 				<li class="postCard">
 					<div class="postCardImage">
-						<a href="blog-post.html" title="#posttitle"><img src="./images/events/adobe-microphone-105646967.jpeg" alt="Blog Featured Image"></a>
+						<a href="/events/xmas-launch-party.html" title="Women in Tech Speak Up - Jeneo Xmas Launch Party"><img src="/images/events/women-in-tech.jpg" alt=""></a>
 					</div>
 					<div class="postCardContent">
-						<a href="blog-post.html" title="#posttitle"><h3>Another event listing here<br/></h3></a>
-						<p><strong>
-							<i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
-							Wed 2 October 20:00</br>
-							<i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Date"></i>
-							Location, City
-							</strong></p>
-						<p>Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet. Lorem ipsum dolar sit amet.</p>
+                        <a href="/events/xmas-launch-party.html" title="Women in Tech Speak Up - Jeneo Xmas Launch Party"><h3>Women in Tech Speak Up - Jeneo Xmas Launch Party</h3></a>
+                        <p><strong>
+                            <i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
+                            </br>
+                            <i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Date"></i>
+                            MOO, London
+                        </strong></p>
+						<p>Hello. Since so many of you wonderful people came along to the summer bash at Expedia in August, I thought it would be lovely to hang out again to discuss diversity, share our experiences and have a few festive drinks and nibbles. It will also be a chance for me...</p>
 						</div>
 					<div class="postCardInfo">
-						<span><i class="postCardIcon fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="#category" title="#categorytitle">Event Category</a></span>
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/women in tech" title="View all posts in the Women in tech category">Women in tech</a></span>
 					</div>
 				</li>
+				
 			</ul>
 		</div>
 	</div>
+    <!--/ content-->		
+
+    <!-- Footer -->
 	
-	<!-- Footer -->
-	
-	<footer id="footer" class="u-full-width">
+<footer id="footer" class="u-full-width">
 		<div class="container">
 			<div class="row">
+
+                <!-- Useful Links -->
+				<div class="four columns">
+                        <h3>Links</h3>
+                        <ul class="footerLinks">
+							
+							<li><a href="/cookies-privacy/">Cookies &amp; Privacy</a></li>
+							
+							<li><a href="/terms-conditions/">Terms &amp; Conditions</a></li>
+							
+							<li><a href="/sitemap/">Sitemap</a></li>
+							
+                        </ul>
+                    </div>
+
 				<!-- Contact Links -->				
 				<div class="four columns">
 					<h3>Get in touch</h3>
@@ -192,19 +224,11 @@
 					
 				</div>
 					
-				<!-- Useful Links -->
-				<div class="four columns">
-					<h3>Links</h3>
-					<ul class="footerLinks">
-						<li><a href="#" title="Cookies & Privacy">Cookies &amp; Privacy</a></li>
-						<li><a href="#" title="Terms & Conditions">Terms &amp; Conditions</a></li>
-						<li><a href="#" title="Sitemap">Sitemap</a></li>
-					</ul>
-				</div>
+				
 			</div>
 			<div class="row">
 				<div class="twelve columns">
-					<span class="legal">&copy; 2018 Jeneo. All rights reserved. Jeneo is a limited company <a href="https://beta.companieshouse.gov.uk/company/10920560" title="View Jeneo at Companies House" target="_blank">registered</a> in England and Wales, no. 10920560.</span>
+					<span class="legal">&copy; 2019 Jeneo. All rights reserved. Jeneo is a limited company <a href="https://beta.companieshouse.gov.uk/company/10920560" title="View Jeneo at Companies House" target="_blank">registered</a> in England and Wales, no. 10920560.</span>
 					<br />
 					<span class="websiteCredit">Website design &amp; development by <a href="https://www.curioustoad.co.uk" title="Curious Toad" rel="nofollow">Curious Toad</a>.</span>
 				</div>
@@ -214,25 +238,9 @@
 	
 <!-- End Document -->
 
-<!-- Scripts -->
+    <!-- Scripts -->
 	<!-- Include jQuery -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	
-<!-- Cleanest code for form ----
-
-<form>
-						<div class="row">
-							
-								<!--<label for="Mailchimp">Your email</label>-- >
-								<input class="u-full-width" placeholder="test@mailbox.com" id="example" type="email">
-							
-						</div>
-						<input class="button-primary" value="Submit" type="submit">
-					</form>
-					
----->
-
 
 </body>
 </html>

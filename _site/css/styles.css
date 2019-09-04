@@ -485,7 +485,7 @@ footer {
 	margin: 1.5rem auto;
 }
 
-.introduction {
+/* make the first paragraph of posts larger, retained class for elsewhere */ #post p:first-of-type, .introduction {
 	font-size: 2rem;
 }
 
