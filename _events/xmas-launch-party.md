@@ -5,7 +5,7 @@ introduction: "A nice little intro can go here. Lorem ipsum dolar sit amet, cons
 image: /images/events/women-in-tech.jpg
 start_date: 2017-12-12T18:00:00Z
 start_time:
-price: 10
+price: 10.50
 event-link: https://www.eventbrite.co.uk/e/women-in-tech-speak-up-jeneo-xmas-launch-party-tickets-37155754863
 venue: MOO
 town: London

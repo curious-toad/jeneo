@@ -43,7 +43,6 @@ collections:
     output: true
 
 # Build settings
-#theme: jeneo
 plugins:
   - jekyll-sitemap
   - jekyll-feed
@@ -51,7 +50,6 @@ plugins:
   - jekyll-archives
 
 # Defaults
-
 defaults:
   -
     scope:
@@ -67,6 +65,15 @@ defaults:
     values:
       is_event: true # automatically set is_event=true for all posts
 
+# Archive setup
+jekyll-archives:
+  enabled: 
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
