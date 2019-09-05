@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-08-21 10:31:39 +0100
-categories: jekyll update
+category: jekyll
 image: /images/blog/office-space.jpg
 image-alt-text: An office space with fancy computers
 author: charlotte_jee

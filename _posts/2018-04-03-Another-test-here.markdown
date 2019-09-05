@@ -2,7 +2,7 @@
 layout: post
 title:  "I've put another test file in here!"
 date:   2018-04-03 10:31:39 +0100
-categories: [iot]
+category: IOT
 tags: [development, internet]
 video-embed-link: https://player.vimeo.com/video/83687791
 ---

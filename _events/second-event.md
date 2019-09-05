@@ -1,5 +1,5 @@
 ---
-layout: event-listing
+layout: event
 title: A second test event
 image: /images/blog/apple-fan.jpg
 start-date: 2017-12-12T10:20:00Z

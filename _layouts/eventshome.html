@@ -23,7 +23,7 @@ layout: default
 						<p>{{ event.content | markdownify | strip_html | truncatewords: 50 }}</p>
 						</div>
 					<div class="postCardInfo">
-						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/{{event.categories[0] | slugize }}" title="View all posts in the {{ event.categories[0] | capitalize }} category">{{ event.categories[0] | capitalize }}</a></span>
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/category/{{event.categories[0] | slugize }}" title="View all posts in the {{ event.categories[0] | capitalize }} category">{{ event.categories[0] | capitalize }}</a></span>
 					</div>
 				</li>
 			{% endfor %}	

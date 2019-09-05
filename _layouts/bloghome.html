@@ -17,7 +17,7 @@ layout: default
 						<p>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
 						</div>
 					<div class="postCardInfo">
-						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/categories/{{post.categories[0] | slugize }}" title="View all posts in the {{ post.categories[0] | capitalize }} category">{{ post.categories[0] | capitalize }}</a></span>
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/category/{{post.categories[0] | slugize }}" title="View all posts in the {{ post.categories[0] | capitalize }} category">{{ post.categories[0] | capitalize }}</a></span>
                         <span class="postCardDate">{{ post.date | date: "%-d %b %Y" }}</span>
 					</div>
 				</li>
