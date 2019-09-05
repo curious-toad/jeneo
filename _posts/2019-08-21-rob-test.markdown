@@ -7,6 +7,7 @@ image: /images/blog/mobile-app-grid.jpg
 image-alt-text: Home screen on a mobile phone
 author: cathy_white
 video-embed-link: https://www.youtube.com/embed/00K0AWbMe_U
+tags: apps
 ---
 # Here is a little test
 If Jekyll is running fine, then this should appear.
