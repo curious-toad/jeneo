@@ -47,7 +47,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-archives
+  # - jekyll-archives
+  - jekyll-paginate-v2
 
 # Defaults
 defaults:
@@ -75,6 +76,8 @@ jekyll-archives:
     category: '/category/:name/'
     tag: '/tag/:name/'
 
+
+    
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
