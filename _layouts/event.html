@@ -10,7 +10,7 @@ layout: default
 						<i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
 						Tue 12 December 18:00</br>
 						<i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Location"></i>
-						MOO, London &ndash; <a href="#map" title="View map">View on map</a></br>
+						MOO, London</br>
 						<i class="postCardIcon fa fa-pound-sign" aria-hidden="true" alt="Price">£</i>
                         {% if page.price > 0 %}
                         {{ page.price | round: 3 }}
@@ -21,7 +21,12 @@ layout: default
 				</div>
 			</div>
 			<div class="two columns">
-				<a class="button button-primary eventBookButton" href="https://www.eventbrite.co.uk/e/women-in-tech-speak-up-jeneo-xmas-launch-party-tickets-37155754863" target="_blank">Book now</a>
+                <div class="row">
+				<a class="button button-primary eventBookButton u-full-width" href="https://www.eventbrite.co.uk/e/women-in-tech-speak-up-jeneo-xmas-launch-party-tickets-37155754863" target="_blank">Book now</a>
+                </div>
+                <div class="row">
+                    <a class="button button eventBookButton u-full-width" href="#map" target="_blank">View map</a>
+                </div>
 			</div>
 		</div>
 
@@ -54,7 +59,11 @@ layout: default
                             <a href="shareEmail" title="Share article via Email"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i><!--Email--></a>
                         </span>
                     </div>
+                    <div class="row" style="margin: -15px 0 15px;">
+                        <a href="#top" title="Back to top" style="float: right;">Back to top <i class="fa fa-arrow-up" aria-hidden="true" alt="Up"></i></a>
+                    </div>
                 </div>
         </div>
+        
 
 </div><!--/container-->
