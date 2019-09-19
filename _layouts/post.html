@@ -27,18 +27,26 @@ layout: default
         <div class="row">
                 <div class="eight columns offset-by-two">
                     <div id="postWidget">
-                            {% if page.tags.size > 0 %}
-                            Tag{% if page.tags.size > 1 %}s{% endif %}:
-                            {{ page.tags | sort | join: ", " }}
-                          {% endif %}
-                        <span>Tags: <a href="#tag1" title="#tag1">Workplace</a>, <a href="#tag2" title="#tag2">Technology</a>, <a href="#tag3" title="#tag3">Future</a></span>
+                        <span>
+                            {% if page.tags.size < 1 %}
+                            Tag:
+                            {% elsif page.tags.size > 1 %}
+                            Tags:
+                            {% endif %}
+                            
+                            {% comment - original list is ... for tag in page.tags | sort | join: ", " %}
+                            {% endcomment %}
+                            {% for tag in page.tags %}
+                            <a href="/tag/{{ tag }}/">{{ tag | capitalize }}</a> / 
+                            {% endfor %}
+                            </span>
                         <span>Subscribe <a href="{{ 'feed.xml' | relative_url }}" title="Subscribe via RSS">via RSS</a></span>
                         <span>Share: 
-                            <a href="#shareFacebook" title="Share article via Facebook"><i class="fa fa-facebook-square" aria-hidden="true" alt="Facebook"></i><!--Facebook--></a>
-                            <a href="shareTwitter" title="Share article via Twitter"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i><!--Twitter--></a>
-                            <a href="shareLinkedIn" title="Share article via LinkedIn"><i class="fa fa-linkedin" aria-hidden="true" alt="LinkedIn"></i><!--LinkedIn--></a>
-                            <a href="shareGoogle+" title="Share article via Google+"><i class="fa fa-google-plus-square" aria-hidden="true" alt="Google+"></i><!--Google+--></a>						
-                            <a href="shareEmail" title="Share article via Email"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i><!--Email--></a>
+                            <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Share article via Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true" alt="Facebook"></i><!--Facebook--></a>
+                            <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter.username }}&related={{ site.twitter_username }}" title="Share article via Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i><!--Twitter--></a>
+                            <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}&title={{ page.title }}&summary={{ page.description }}&source={{ site.url }}" title="Share article via LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true" alt="LinkedIn"></i><!--LinkedIn--></a>
+                            <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share article via Google+" rel="nofollow" target="_blank"><i class="fa fa-google-plus-square" aria-hidden="true" alt="Google+"></i><!--Google+--></a>						
+                            <a href="mailto:?subject=Sharing: {{ page.title }}&body=I wanted to share this article with you from {{ site.url }}{{ page.url }}%0D%0A%0D%0A{{ page.title}}%0D%0A%0D%0A{{ page.description }}" title="Share article via Email" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i><!--Email--></a>
                         </span>
                     </div>
                 </div>
