@@ -64,6 +64,10 @@ html, body {
 	margin-top: 60px;
 }
 
+.margin-top-30 { /* Utility spacer */
+	margin-top: 30px;
+}
+
 /* Scrolling fix - adds additional headroom for anchor links to accomodate header */
 
 :target:before {

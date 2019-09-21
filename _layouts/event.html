@@ -3,12 +3,14 @@ layout: default
 ---
 
 <div class="container">
-		<div id="eventCTA" class="row margin-top-60">
+		<div id="eventCTA" class="row margin-top-30">
 			<div class="six columns offset-by-two ">
 				<div class="eventDetails">
 					<span>
 						<i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
-						{{ page.start_date | date: "%a %-d %B %R" }}</br>
+                        {{ page.start_date | date: "%a %-d %B %Y" }}</br>
+                        <i class="postCardIcon fa fa-clock-o" aria-hidden="true" alt="Time"></i>
+						{{ page.start_date | date: "%R" }}</br>
 						<i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Location"></i>
 						{{ page.venue}}, {{ page.town }}</br>
 						<i class="postCardIcon fa fa-pound-sign" aria-hidden="true" alt="Price">£</i>

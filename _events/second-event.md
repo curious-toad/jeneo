@@ -1,8 +1,8 @@
 ---
 layout: event
 title: A second test event
-image: /images/blog/apple-fan.jpg
-start-date: 2017-12-12T10:20:00Z
+header_image: /images/blog/apple-fan.jpg
+start_date: 2019-03-15T10:20:00Z
 venue: Brighton Dome
 town: Brighton
 location: 

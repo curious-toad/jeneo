@@ -1,8 +1,8 @@
 ---
 layout: event
 title: Test Event
-image: /images/events/women-in-tech.jpg
-start-date: 2016-03-23T10:20:00Z
+header_image: /images/events/women-in-tech.jpg
+start_date: 2020-03-23T10:20:00Z
 venue: Brighton Centre
 town: Brighton
 location: Kings Rd, Brighton BN1 2GR
