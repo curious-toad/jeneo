@@ -24,6 +24,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   We give under-represented groups in tech a voice. We help tech companies and teams to source fantastic individuals to speak at events.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.jeneo.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
+
+# SEO tag - Social Profiles and Company Details
+lang: en_GB
+
 twitter:
   username: jeneoltd
   card: summary
@@ -36,6 +40,7 @@ social:
   links: 
     - https://twitter.com/jeneoltd
     - https://www.facebook.com/Jeneo-1398357766952255
+    - https://uk.linkedin.com/company/jeneo
 
 # Collections
 collections:
@@ -45,15 +50,7 @@ collections:
     output: true
     permalink: /author/:path
 
-# Build settings
-plugins:
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-seo-tag
-  # - jekyll-archives
-  - jekyll-paginate-v2
-
-# Defaults
+# Defaults - set for templates
 defaults:
   -
     scope:
@@ -85,7 +82,13 @@ jekyll-archives:
     category: '/category/:name/'
     tag: '/tag/:name/'
 
-
+# Build settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  # - jekyll-archives
+  - jekyll-paginate-v2
     
 # Exclude from processing.
 # The following items will not be processed, by default.
