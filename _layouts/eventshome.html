@@ -10,7 +10,7 @@ layout: default
             {% for event in sorted_events reversed %}
 				<li class="postCard">
 					<div class="postCardImage">
-						<a href="{{ event.url }}" title="{{ event.title}}"><img src="{{ event.image }}" alt="{{ event.image-alt-text }}"></a>
+						<a href="{{ event.url }}" title="{{ event.title}}"><img src="{{ event.header_image }}" alt="{{ event.image-alt-text }}"></a>
 					</div>
 					<div class="postCardContent">
                         <a href="{{ event.url }}" title="{{ event.title}}"><h3>{{ event.title}}</h3></a>
