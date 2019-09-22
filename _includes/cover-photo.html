@@ -30,6 +30,20 @@
     </div>
 </section>
 
+{% elsif page.is_author_page %}
+
+<!-- Blog cover photo -->
+<section class="u-full-width coverPhoto coverPhotoOverlay" style="background-image: url(/images/blog/blog-cover-photo.jpg);">
+    <div class="container">
+        <div class="eight columns offset-by-two">
+            <div class="coverPhotoContent margin-top-60">
+                <a class="coverPhotoTag" href="/category/{{page.categories[0] | slugize }}" title="View all posts in the {{ page.categories[0] | capitalize }} category">{{page.categories[0] | capitalize }}</a>
+                <h1 class="postTitle">Archive</h1>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% else %}
 
 <!-- Generic cover photo -->

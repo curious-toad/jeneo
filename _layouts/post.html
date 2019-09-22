@@ -2,13 +2,14 @@
 layout: default
 ---
 
-{% assign author = site.data.authors[page.author] %}
+{% comment assign author = site.data.authors[page.author] %}{% endcomment %}
+{% assign author = site.team | where: 'name', page.author | first  %}
 
 <div class="container">
 		<div class="row">
 			<div class="eight columns offset-by-two">
 				<div class="coverPhotoAuthorBox">
-					<a href="#author" title="See all posts by {{ author.name }}"><img class="avatar" src="{{ author.image }}" alt="{{ author.name }}">
+					<a href="{{ author.url }}" title="See all posts by {{ author.name }}"><img class="avatar" src="{{ author.image }}" alt="{{ author.name }}">
 					<span>{{ author.name }}</span></a>
 				</div>
 				<div id="post">

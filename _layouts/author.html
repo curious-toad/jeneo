@@ -1,0 +1,57 @@
+---
+layout: default
+is_archive: true
+---
+
+{% assign author = page %}
+{% assign author_first_name = author.name | split: " " | first %}
+
+{% assign filtered_posts = site.posts | where: 'author', page.name %}
+
+<div class="container margin-top-60">
+    <div class="row">
+        <div class="eight columns offset-by-two">
+            <div id="authorBox">
+                <div class="authorLink coverPhotoAuthorBox">
+                    <img class="avatar" src="{{ author.image }}" alt="{{ author.name }}">
+                    <span>{{ author.name }}</span>
+                </div>
+                    <p>{{ author.author_bio }}</p>
+                    <p>Connect with {{ author_first_name }}:
+                    {% if author.twitter %}
+                    <a href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }} on Twitter"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i><!--Twitter--></a>
+                    {% endif %}
+                    {% if author.linkedin %}
+                    <a href="https://www.linkedin.com/in/{{ author.linkedin }}" title="{{ author.name }} on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true" alt="LinkedIn"></i><!--LinkedIn--></a>
+                    {% endif %}
+                    {% if author.email %}
+                    <a href="mailto:{{ author.email }}" title="Email {{ author.name }}"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i><!--Email--></a>
+                    {% endif %}
+                    </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container margin-top-60">
+    <div class="row">
+        <h2>See all posts by {{ author_first_name }}</h2>
+        <ul class="postList">
+        {% for post in filtered_posts %}
+            <li class="postCard">
+                <div class="postCardImage">
+                    <a href="{{ post.url }}" title="{{ post.title}}"><img src="{{ post.image }}" alt="{{ post.image-alt-text }}"></a>
+                </div>
+                <div class="postCardContent">
+                    <a href="{{ post.url }}" title="{{ post.title}}"><h3>{{ post.title}}</h3></a>
+                    <p>{{ post.content | markdownify | strip_html | truncatewords: 50 }}</p>
+                    </div>
+                <div class="postCardInfo">
+                    <span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/category/{{post.categories[0] | slugize }}" title="View all posts in the {{ post.categories[0] | capitalize }} category">{{ post.categories[0] | capitalize }}</a></span>
+                    <span class="postCardDate">{{ post.date | date: "%-d %b %Y" }}</span>
+                </div>
+            </li>
+        {% endfor %}	
+        </ul>
+    </div>
+</div>

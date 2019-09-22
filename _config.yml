@@ -41,6 +41,9 @@ social:
 collections:
   events:
     output: true
+  team:
+    output: true
+    permalink: /author/:path
 
 # Build settings
 plugins:
@@ -58,13 +61,19 @@ defaults:
       type: posts   # limit to posts
     values:
       is_post: true # automatically set is_post=true for all posts
-      author: charlotte_jee
+      author: "Charlotte Jee"
   -
     scope:
       path: ""      # empty string for all files
       type: events   # limit to posts
     values:
       is_event: true # automatically set is_event=true for all posts
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: team   # limit to posts
+    values:
+      is_author_page: true # automatically set is_author_page=true for all posts
 
 # Archive setup
 jekyll-archives:

@@ -1,17 +1,24 @@
-{% assign author = site.data.authors[page.author] %}
+{% assign author = site.team | where: 'name', page.author | first  %}
+{% assign author_first_name = author.name | split: " " | first %}
 
 <div class="row">
     <div class="eight columns offset-by-two">
         <div id="authorBox">
             <div class="authorLink coverPhotoAuthorBox">
-                <a href="#author" title="See all posts by {{author.name }}"><img class="avatar" src="{{ author.image }}" alt="{{ author.name }}">
+                <a href="{{ author.url }}" title="See all posts by {{author.name }}"><img class="avatar" src="{{ author.image }}" alt="{{ author.name }}">
                 <span>{{ author.name }}</span></a>
             </div>
-                <p>{{ author.bio }}</p>
-                <p>Connect with {{ author.name }}: 
+                <p>{{ author.author_bio }}</p>
+                <p>Connect with {{ author_first_name }}:
+                {% if author.twitter %}
                 <a href="https://twitter.com/{{ author.twitter }}" title="{{ author.name }} on Twitter"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i><!--Twitter--></a>
+                {% endif %}
+                {% if author.linkedin %}
                 <a href="https://www.linkedin.com/in/{{ author.linkedin }}" title="{{ author.name }} on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true" alt="LinkedIn"></i><!--LinkedIn--></a>
+                {% endif %}
+                {% if author.email %}
                 <a href="mailto:{{ author.email }}" title="Email {{ author.name }}"><i class="fa fa-envelope" aria-hidden="true" alt="Email"></i><!--Email--></a>
+                {% endif %}
                 </p>
         </div>
     </div>
