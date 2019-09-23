@@ -59,6 +59,18 @@ defaults:
     values:
       is_post: true # automatically set is_post=true for all posts
       author: "Charlotte Jee"
+      _array_structures:
+        gallery:
+          - label: Image
+            icon: image
+            value:
+              image: /placeholder.png
+              caption:
+          - label: External link
+            icon: link
+            value:
+              url:
+              title:
   -
     scope:
       path: ""      # empty string for all files
@@ -94,23 +106,8 @@ plugins:
 # Cloudcannon setup
 #----------------
 
-defaults:
-  - scope:
-      path: ''
-      type: 'posts'
-    values:
-      _array_structures:
-        gallery:
-          - label: Image
-            icon: image
-            value:
-              image: /placeholder.png
-              caption:
-          - label: External link
-            icon: link
-            value:
-              url:
-              title:
+
+      
 
 
 # Exclude from processing.
