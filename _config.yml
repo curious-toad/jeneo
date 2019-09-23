@@ -94,14 +94,23 @@ plugins:
 # Cloudcannon setup
 #----------------
 
-_array_structures:
-  events:
-    - label: "Event"
-      icon: "event_seat"
-      value:
-        date:
-        name:
-        location:
+defaults:
+  - scope:
+      path: ''
+      type: 'posts'
+    values:
+      _array_structures:
+        gallery:
+          - label: Image
+            icon: image
+            value:
+              image: /placeholder.png
+              caption:
+          - label: External link
+            icon: link
+            value:
+              url:
+              title:
 
 
 # Exclude from processing.
