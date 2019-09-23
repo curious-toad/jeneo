@@ -89,7 +89,21 @@ plugins:
   - jekyll-seo-tag
   # - jekyll-archives
   - jekyll-paginate-v2
-    
+
+#----------------
+# Cloudcannon setup
+#----------------
+
+_array_structures:
+  events:
+    - label: "Event"
+      icon: "event_seat"
+      value:
+        date:
+        name:
+        location:
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
