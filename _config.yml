@@ -49,6 +49,7 @@ collections:
   team:
     output: true
     permalink: /author/:path
+    _singular_name: Team Member
 
 # Defaults - set for templates
 defaults:
