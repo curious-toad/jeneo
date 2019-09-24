@@ -16,3 +16,13 @@ Excepteur cillum deserunt fugiat cupidatat magna Lorem. Pariatur cillum excepteu
 
 ### Here is an H3
 There should be some other content here.
+
+### here is a test of mapping
+
+
+{% assign all_prices = site.pages | map: "price" %}
+
+{% for item in all_prices %}
+- {{ item }}
+{% endfor %}
+
