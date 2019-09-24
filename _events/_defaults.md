@@ -13,5 +13,8 @@ location:
 categories:
 google_map_embed_code:
 _comments:
-  end_date: If the event spans multiple days, add the end date and time. (If single day leave blank.) 
+  end_date: If the event spans multiple days, add the end date and time. (If single day leave blank.)
+_options:
+  layout:
+    hidden: true 
 ---
