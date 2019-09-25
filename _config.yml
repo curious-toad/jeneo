@@ -117,9 +117,8 @@ _explore:
         - events
         - event-lables
     - heading: structure
-      collections:
-        - navigation
       data:
+        - navigation
         - footer-links
 
 
