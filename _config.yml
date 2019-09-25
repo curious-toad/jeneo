@@ -99,6 +99,29 @@ plugins:
 # Cloudcannon setup
 #----------------
 
+# Grouping for content types in the editor 
+
+_explore:
+  groups:
+    - heading: Pages
+      collections:
+        - pages
+    - heading: Blogging
+      collections:
+        - posts
+        - drafts
+        - categories
+        - tags
+    - heading: Events
+      collections:
+        - events
+        - event-lables
+    - heading: structure
+      collections:
+        - navigation
+      data:
+        - footer-links
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
