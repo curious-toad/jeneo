@@ -1,6 +1,7 @@
 ---
 layout: event
 title:
+event-lable:
 introduction_text:
 header_image: /images/events/
 start_date_datetime:
@@ -10,10 +11,10 @@ event_link:
 venue:
 town:
 location_text:
-categories:
 google_map_embed_code _text:
 _comments:
   title: Add a title for the event. 
+  event-lable: Select a lable (category) for the event. (You can manage labels on the Event Lables editor.) 
   introduction_text: Add a short introduction. This appears in larger text on the event listing and as the synopsis on the events homepage. . 
   header_image: Add an image for the event. 
   start_date_datetime: Select the start date and time for the event. 
