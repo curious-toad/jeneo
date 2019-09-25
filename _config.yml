@@ -110,16 +110,14 @@ _explore:
       collections:
         - posts
         - drafts
-        - categories
-        - tags
+        - category
     - heading: Events
       collections:
         - events
         - event-lables
     - heading: structure
-      data:
-        - navigation
-        - footer-links
+      collection:
+        - data
 
 
 # Exclude from processing.
