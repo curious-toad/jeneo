@@ -46,6 +46,10 @@ social:
 collections:
   events:
     output: true
+  event-lables:
+    output: true
+    permalink: /events/:title
+    _singular_name: event-lable
   team:
     output: true
     permalink: /author/:path
