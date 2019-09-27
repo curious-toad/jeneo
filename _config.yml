@@ -46,14 +46,17 @@ social:
 collections:
   events:
     output: true
+    _icon: event
   event-lables:
     output: true
     permalink: /events/:title
     _singular_name: event-lable
+    _icon: lable
   team-members:
     output: true
     permalink: /author/:path
     _singular_name: team_member
+    _icon: face
 
 # Defaults - set for templates
 defaults:
@@ -111,20 +114,16 @@ _explore:
       collections:
         - posts
         - drafts
-        - category
       _icon: post_add
     - heading: Events
       collections:
         - events
-          _icon: event
         - event-lables
-          _icon: lable
     - heading: People
       collections:
         - team-members
-      _icon: face
     - heading: structure
-      collection:
+      collections:
         - data
 
 
