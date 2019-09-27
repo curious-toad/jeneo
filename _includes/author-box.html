@@ -1,4 +1,4 @@
-{% assign author = site.team | where: 'name', page.author | first  %}
+{% assign author = site.team-members | where: 'name', page.author | first  %}
 {% assign author_first_name = author.name | split: " " | first %}
 
 <div class="row">
