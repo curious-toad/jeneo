@@ -1,5 +1,5 @@
 ---
-layout: author
+layout: archive-author
 name: "Charlotte Jee"
 image: /images/charlotte.jpg
 order: 10

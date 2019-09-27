@@ -1,4 +1,5 @@
 {% assign blog-header-image = "/images/blog/blog-cover-photo.jpg" %}
+{% assign event-header-image = "/images/events/adobe-speaker-199357227-flip.jpg" %}
 
 {% if page.frontpage == true %}
 
@@ -32,6 +33,22 @@
     </div>
 </section>
 
+{% elsif page.type == 'event-archive' %}
+
+<!-- Section cover photo -->
+<section id="sectionHero" class="u-full-width coverPhoto margin-top-60" style="background-image: url({{ event-header-image }}); background-postion: center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="eight columns offset-by-two">
+                    <div class="coverPhotoContent">
+                        <h1>Archive</h1>
+                        <h2>{% if page.layout == 'author' %}Author{% else %}{{ page.title | capitalize }}{% endif %}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 {% elsif page.type == 'category' or 'tag' %}
 
 <!-- Section cover photo -->
@@ -51,7 +68,7 @@
 {% else %}
 
 <!-- Generic cover photo -->
-<section id="genericHero" class="u-full-width coverPhoto coverPhotoOverlay margin-top-60" style="height: 50%; background-image: url({{ page.header_image }}); background-color: #ccc; background-position: center;"><!--background-image: url(./images/blog/blog-cover-photo.jpg);-->
+<section id="genericHero" class="u-full-width coverPhoto coverPhotoOverlay margin-top-60" style="height: 50%; background-image: url({{ page.header_image }}); background-color: #ccc; background-position: center;">
     <div class="container">
         <div class="row">
             <div class="eight columns offset-by-two">

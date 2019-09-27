@@ -1,5 +1,5 @@
 ---
-layout: author
+layout: archive-author
 name:
 image:
 order_number:

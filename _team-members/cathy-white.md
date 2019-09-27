@@ -1,5 +1,5 @@
 ---
-layout: author
+layout: archive-author
 name: "Cathy White"
 image: /images/cathy.jpg
 order: 20

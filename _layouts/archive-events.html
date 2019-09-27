@@ -1,0 +1,42 @@
+---
+layout: default
+is_archive: true
+is_event: true
+type: event-archive
+---
+
+{% assign current_label = page.title | downcase %}
+
+{% assign filtered_events = site.events | where: 'event-label', current_label %}
+
+<!-- Events list -->
+{% assign sorted_events = filtered_events | sort: 'start_date' %}	
+<div class="container margin-top-60">
+		<div class="row">
+            <h2>Archive of Events labelled '{{ page.title }}'</h2>
+			<ul class="postList">
+            {% for event in sorted_events reversed %}
+				<li class="postCard">
+					<div class="postCardImage">
+						<a href="{{ event.url }}" title="{{ event.title}}"><img src="{{ event.header_image }}" alt="{{ event.image-alt-text }}"></a>
+					</div>
+					<div class="postCardContent">
+                        <a href="{{ event.url }}" title="{{ event.title}}"><h3>{{ event.title}}</h3></a>
+                        <p><strong>
+                            <i class="postCardIcon fa fa-calendar-o" aria-hidden="true" alt="Date"></i>
+							{{ event.start_date | date: "%a %-d %B %Y"}}</br>
+							<i class="postCardIcon fa fa-clock-o" aria-hidden="true" alt="Time"></i>
+							{{ event.start_date | date: "%R" }}</br>
+                            <i class="postCardIcon fa fa-map-marker" aria-hidden="true" alt="Location"></i>
+                            {{ event.venue }}, {{ event.town }}
+                        </strong></p>
+						<p>{{ event.content | markdownify | strip_html | truncatewords: 50 }}</p>
+						</div>
+					<div class="postCardInfo">
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/events/{{event.event-label[0] | slugify }}" title="View all posts in the {{ event.event-label[0] | capitalize }} category">{{ event.event-label[0] | capitalize }}</a></span>
+					</div>
+				</li>
+			{% endfor %}	
+			</ul>
+		</div>
+	</div>
