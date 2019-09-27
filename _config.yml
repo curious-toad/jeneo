@@ -47,10 +47,10 @@ collections:
   events:
     output: true
     _icon: event
-  event-lables:
+  event-labels:
     output: true
     permalink: /events/:title
-    _singular_name: event-lable
+    _singular_name: event-label
     _icon: label
   team-members:
     output: true
@@ -118,7 +118,7 @@ _explore:
     - heading: Events
       collections:
         - events
-        - event-lables
+        - event-labels
     - heading: People
       collections:
         - team-members
