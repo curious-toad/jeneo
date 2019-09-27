@@ -2,6 +2,11 @@
 layout: default
 ---
 
+{% assign price_split = page.price | round: 2 | split: "." %}
+{% assign integral = price_split[0] %}
+{% assign fractional = price_split[1] | append: "00" | truncate: 2, "" %}
+
+
 <div class="container">
 		<div id="eventCTA" class="row margin-top-30">
 			<div class="six columns offset-by-two ">
@@ -15,7 +20,7 @@ layout: default
 						{{ page.venue}}, {{ page.town }}</br>
 						<i class="postCardIcon fa fa-pound-sign" aria-hidden="true" alt="Price">£</i>
                         {% if page.price > 0 %}
-                        {{ page.price | round: 3 }}
+                        {{ integral }}.{{ fractional }}
                         {% else %}
                         Free
                         {% endif %}
@@ -26,21 +31,17 @@ layout: default
                 <div class="row">
 				<a class="button button-primary eventBookButton u-full-width" href="{{ page.event_link }}" target="_blank">Book now</a>
                 </div>
+                {% if page.google_map_embed_code %}
                 <div class="row">
                     <a class="button eventBookButton u-full-width" href="#map" target="_blank">View map</a>
                 </div>
+                {% endif %}
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="eight columns offset-by-two eventInfo">
 				<div id="post">
-{% if page.is_event %}
-<span>Hey, I'm an event!</span>
-{% endif %}
-{% if page.is_event_archive %}
-<span>Hey, I'm an event archive!</span>
-{% endif %}
                     <p class="introduction">{{ page.introduction }}</p>
 
                     {{ content }}
@@ -52,8 +53,12 @@ layout: default
         {% comment include event-agenda.html %}{% endcomment %}
 
         {% comment include event-speakers.html %}{% endcomment %}
+       
+        {% if page.google_map_embed_code %}
 
-        {% include event-map.html %}
+            {% include event-map.html %}
+        
+        {% endif %}
         
         <div class="row" style="margin-top: 15px;">
                 <div class="eight columns offset-by-two">

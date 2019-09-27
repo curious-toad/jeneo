@@ -8,7 +8,7 @@ price: 5
 event_link: www.bbc.co.uk/news
 venue: Google
 town: San Francisco
-location: San Fran baby
+location: 
 event-label: [mobile]
 google_map_embed_code:
 ---
