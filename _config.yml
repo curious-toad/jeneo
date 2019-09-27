@@ -50,7 +50,7 @@ collections:
     output: true
     permalink: /events/:title
     _singular_name: event-lable
-  team:
+  team-members:
     output: true
     permalink: /author/:path
     _singular_name: team_member
@@ -73,7 +73,7 @@ defaults:
   -
     scope:
       path: ""      # empty string for all files
-      type: team   # limit to posts
+      type: team-members   # limit to posts
     values:
       is_author_page: true # automatically set is_author_page=true for all posts
 
@@ -106,15 +106,23 @@ _explore:
     - heading: Pages
       collections:
         - pages
+      _icon: web
     - heading: Blogging
       collections:
         - posts
         - drafts
         - category
+      _icon: post_add
     - heading: Events
       collections:
         - events
+          _icon: event
         - event-lables
+          _icon: lable
+    - heading: People
+      collections:
+        - team-members
+      _icon: face
     - heading: structure
       collection:
         - data
