@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% comment assign author = site.data.authors[page.author] %}{% endcomment %}
-{% assign author = site.team | where: 'name', page.author | first  %}
+{% assign author = site team-members | where: 'name', page.author | first  %}
 
 <div class="container">
 		<div class="row">
