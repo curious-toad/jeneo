@@ -4,7 +4,7 @@ title:
 description:
 event-lable:
 introduction_text:
-header_image: /images/events/
+header_image: /assets/images/events/
 start_date_datetime:
 end_date_datetime:
 price_number: 

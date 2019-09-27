@@ -3,7 +3,7 @@ layout: page
 title: Get Involved
 description: Description here.
 main_heading: Get Involved
-header_image: ../images/sub-pages/sub-page-header.jpg
+header_image: ../assets/images/sub-pages/sub-page-header.jpg
 ---
 ## Join our cause
 If you're a woman working in tech and you want to speak at events, we'd love to hear from you. Individuals from under-represented groups are encouraged to sign up too. Please leave your details below.

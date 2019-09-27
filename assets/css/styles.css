@@ -109,7 +109,7 @@ h1, h2, h3 {
 #hero {
 	position: relative;
 	background-color: #226089;
-	background: url("../images/hero.jpg") center;
+	background: url("/assets/images/hero.jpg") center;
 	color: #fff;
 	 display: flex;
     align-items: center;
@@ -149,7 +149,7 @@ h1, h2, h3 {
 #intro {
 	position: relative;
 	background-color: #111;
-	background: url("../images/intro.jpg") center;
+	background: url("/assets/images/intro.jpg") center;
 	background-size: auto 100%;
 	color: #fff;
     display: flex;

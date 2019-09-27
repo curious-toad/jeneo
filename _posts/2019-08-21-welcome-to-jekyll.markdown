@@ -5,7 +5,7 @@ date:   2019-08-21 10:31:39 +0100
 description: "Here's a lovely little description telling us all about how this is a new article."
 category: jekyll
 tag: [mobile, development, test]
-image: /images/blog/office-space.jpg
+image: /assets/images/blog/office-space.jpg
 image-alt-text: An office space with fancy computers
 image_attribution_source:
 image_attribution_name:

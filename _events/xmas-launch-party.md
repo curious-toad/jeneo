@@ -2,7 +2,7 @@
 layout: event
 title: Women in Tech Speak Up - Jeneo Xmas Launch Party
 introduction: "A nice little intro can go here. Lorem ipsum dolar sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
-header_image: /images/events/women-in-tech.jpg
+header_image: /assets/images/events/women-in-tech.jpg
 start_date: 2017-12-12T 18:00:00 +0100
 start_time:
 price: 10.50

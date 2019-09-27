@@ -1,7 +1,7 @@
 ---
 layout: archive-author
 name: "Charlotte Jee"
-image: /images/charlotte.jpg
+image: /assets/images/charlotte.jpg
 order: 10
 job_role: Jeneo Founder
 email: charlotte@jeneo.co.uk

@@ -1,7 +1,7 @@
 ---
 layout: archive-author
 name: "Cathy White"
-image: /images/cathy.jpg
+image: /assets/images/cathy.jpg
 order: 20
 job_role: Board Member
 email: cathy@jeneo.co.uk
