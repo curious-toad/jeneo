@@ -49,7 +49,7 @@ collections:
     _icon: event
   event-labels:
     output: true
-    permalink: /events/:title
+    permalink: /events/category/:title
     _singular_name: event-label
     _icon: label
   team-members:

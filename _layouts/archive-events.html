@@ -10,7 +10,7 @@ layout: default
 {% assign sorted_events = filtered_events | sort: 'start_date' %}	
 <div class="container margin-top-60">
 		<div class="row">
-            <h2>Archive of Events labelled '{{ page.title }}'</h2>
+            <h2>Archive of Events with category '{{ page.title }}'</h2>
 			<ul class="postList">
             {% for event in sorted_events reversed %}
 				<li class="postCard">
@@ -30,7 +30,7 @@ layout: default
 						<p>{{ event.content | markdownify | strip_html | truncatewords: 50 }}</p>
 						</div>
 					<div class="postCardInfo">
-						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/events/{{event.event-label[0] | slugify }}" title="View all posts in the {{ event.event-label[0] | capitalize }} category">{{ event.event-label[0] | capitalize }}</a></span>
+						<span><i class="fa fa-tag" aria-hidden="true" alt="Tag"></i> <a href="/events/category/{{event.event-label[0] | slugify }}" title="View all events in the {{ event.event-label[0] | capitalize }} category">{{ event.event-label[0] | capitalize }}</a></span>
 					</div>
 				</li>
 			{% endfor %}	

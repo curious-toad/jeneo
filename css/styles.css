@@ -615,6 +615,7 @@ footer {
 .postCard a {
 	color: #226089;
 	text-decoration: none;
+	text-transform: capitalize;
 }
 
 .postCardInfo {
@@ -638,7 +639,7 @@ footer {
 
 
 .coverPhotoTag {
-	/*text-transform: uppercase;*/
+	text-transform: capitalize;
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 15px;

@@ -1,6 +1,6 @@
 
 .coverPhotoTag {
-	text-transform: uppercase;
+	text-transform: capitalize;
 	color: #fff;
 	text-decoration: none;
 	margin-bottom: 15px;

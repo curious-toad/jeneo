@@ -35,7 +35,12 @@ layout: default
 		<div class="row">
 			<div class="eight columns offset-by-two eventInfo">
 				<div id="post">
-
+{% if page.is_event %}
+<span>Hey, I'm an event!</span>
+{% endif %}
+{% if page.is_event_archive %}
+<span>Hey, I'm an event archive!</span>
+{% endif %}
                     <p class="introduction">{{ page.introduction }}</p>
 
                     {{ content }}
