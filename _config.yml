@@ -80,6 +80,12 @@ defaults:
       type: team-members   # limit to posts
     values:
       is_author_page: true # automatically set is_author_page=true for all posts
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      is_page: true
 
 # Archive setup
 jekyll-archives:
