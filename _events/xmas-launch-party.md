@@ -10,7 +10,7 @@ event_link: https://www.eventbrite.co.uk/e/women-in-tech-speak-up-jeneo-xmas-lau
 venue: MOO
 town: London
 location: 20 Farringdon Rd, Farringdon, London EC1M 3AF
-categories: [women in tech]
+event-label: [women in tech]
 google_map_embed_code: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.6334202425883!2d-0.10774164886595701!3d51.519941017507605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b4f164e8ca7%3A0xda98c65a50796554!2sMoo!5e0!3m2!1sen!2suk!4v1568855445754!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 ---
 

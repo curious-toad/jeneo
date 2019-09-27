@@ -67,6 +67,7 @@ defaults:
     values:
       is_post: true # automatically set is_post=true for all posts
       author: "Charlotte Jee"
+      permalink: /blog/:title
   -
     scope:
       path: ""      # empty string for all files
@@ -87,8 +88,8 @@ jekyll-archives:
     - tags
   layout: 'archive'
   permalinks:
-    category: '/category/:name/'
-    tag: '/tag/:name/'
+    category: '/blog/category/:name/'
+    tag: '/blog/tag/:name/'
 
 # Build settings
 plugins:

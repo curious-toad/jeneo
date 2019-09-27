@@ -1,9 +1,11 @@
+{% assign blog-header-image = "/images/blog/blog-cover-photo.jpg" %}
+
 {% if page.frontpage == true %}
 
 {% elsif page.sub-heading %}
 
 <!-- Section cover photo -->
-<section id="sectionHero" class="u-full-width coverPhoto margin-top-60" style="background-image: url({{ page.header-image }}); background-postion: center; background-size: cover;>
+<section id="sectionHero" class="u-full-width coverPhoto margin-top-60" style="background-image: url({{ page.header-image }}); background-postion: center; background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="eight columns offset-by-two">
@@ -23,26 +25,28 @@
     <div class="container">
         <div class="eight columns offset-by-two">
             <div class="coverPhotoContent margin-top-60">
-                <a class="coverPhotoTag" href="/category/{{page.categories[0] | slugize }}" title="View all posts in the {{ page.categories[0] | capitalize }} category">{{page.categories[0] | capitalize }}</a>
+                <a class="coverPhotoTag" href="/blog/category/{{page.categories[0] | slugize }}" title="View all posts in the {{ page.categories[0] | capitalize }} category">{{page.categories[0] | capitalize }}</a>
                 <h1 class="postTitle">{{ page.title }}</h1>
             </div>
         </div>
     </div>
 </section>
 
-{% elsif page.is_author_page %}
+{% elsif page.type == 'category' or 'tag' %}
 
-<!-- Blog cover photo -->
-<section class="u-full-width coverPhoto coverPhotoOverlay" style="background-image: url(/images/blog/blog-cover-photo.jpg); background-postion: center; background-size: cover;">
-    <div class="container">
-        <div class="eight columns offset-by-two">
-            <div class="coverPhotoContent margin-top-60">
-                <a class="coverPhotoTag" href="/category/{{page.categories[0] | slugize }}" title="View all posts in the {{ page.categories[0] | capitalize }} category">{{page.categories[0] | capitalize }}</a>
-                <h1 class="postTitle">Archive</h1>
+<!-- Section cover photo -->
+<section id="sectionHero" class="u-full-width coverPhoto margin-top-60" style="background-image: url({{ blog-header-image }}); background-postion: center; background-size: cover;">
+        <div class="container">
+            <div class="row">
+                <div class="eight columns offset-by-two">
+                    <div class="coverPhotoContent">
+                        <h1>Archive</h1>
+                        <h2>{% if page.layout == 'author' %}Author{% else %}{{ page.title | capitalize }}{% endif %}</h2>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 {% else %}
 

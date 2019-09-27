@@ -1,5 +1,5 @@
 ---
 layout: archive-events
-title: Women in tech speak up
+title: Mobile
 ---
 Here is some content

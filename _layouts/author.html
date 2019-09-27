@@ -33,9 +33,11 @@ is_archive: true
     </div>
 </div>
 
+{% if filtered_posts.size > 0 %}
+
 <div class="container margin-top-60">
     <div class="row">
-        <h2>See all posts by {{ author_first_name }}</h2>
+        <h2>Archive of posts by {{ author_first_name }}</h2>
         <ul class="postList">
         {% for post in filtered_posts %}
             <li class="postCard">
@@ -55,3 +57,14 @@ is_archive: true
         </ul>
     </div>
 </div>
+
+{% else %}
+
+<div class="container margin-top-60">
+        <div class="row">
+            <h2>{{ author_first_name }} does not have any posts yet</h2>
+            <a href="/blog/" title="Jeneo Blog">Go back to Blog</a>
+        </div>
+    </div>
+
+{% endif %}

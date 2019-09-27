@@ -38,7 +38,7 @@ layout: default
                             {% comment - original list is ... for tag in page.tags | sort | join: ", " %}
                             {% endcomment %}
                             {% for tag in page.tags %}
-                            <a href="/tag/{{ tag }}/">{{ tag | capitalize }}</a> / 
+                            <a href="/blog/tag/{{ tag }}/">{{ tag | capitalize }}</a> / 
                             {% endfor %}
                             </span>
                         <span>Subscribe <a href="{{ 'feed.xml' | relative_url }}" title="Subscribe via RSS">via RSS</a></span>
