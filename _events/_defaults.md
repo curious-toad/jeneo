@@ -32,6 +32,7 @@ _comments:
 _options:
   layout:
     hidden: true 
+gallery_blocks: [] 
 _array_structures:
   gallery:
     - label: Image
