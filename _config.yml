@@ -46,15 +46,16 @@ social:
 collections:
   events:
     output: true
+    permalink: /events/:title/
     _icon: event
   event-labels:
     output: true
-    permalink: /events/category/:title
+    permalink: /events/category/:title/
     _singular_name: event-label
     _icon: label
   team-members:
     output: true
-    permalink: /author/:path
+    permalink: /author/:path/
     _singular_name: team_member
     _icon: face
 
