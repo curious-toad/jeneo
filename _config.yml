@@ -86,6 +86,7 @@ defaults:
       path: ""
       type: pages
     values:
+      permalink: /path/:title
       is_page: true
 
 # Archive setup
