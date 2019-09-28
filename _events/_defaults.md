@@ -31,7 +31,6 @@ _comments:
 _options:
   layout:
     hidden: true 
-page_blocks: []
 _array_structures:
   page_blocks:
     - label: Text Block
