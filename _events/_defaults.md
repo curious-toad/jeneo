@@ -45,9 +45,8 @@ _array_structures:
       icon: table
       value:
         _id: table_block
-        title:
+        start_time:
         content_markdown:
-        image:
     - label: Testimonial
       icon: format_quote
       value:
