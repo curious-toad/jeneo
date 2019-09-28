@@ -67,4 +67,14 @@ _array_structures:
     value:
       image:
       caption:
+speaker_blocks: []
+_array_structures:
+  speaker_blocks:
+    - label: Speaker Block
+      icon: person
+      value:
+        _id: speaker_block
+        title:
+        content_markdown:
+        image:
 ---
