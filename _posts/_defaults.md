@@ -10,6 +10,7 @@ image-alt_text:
 image_attribution_source:
 image_attribution_name:
 image_attribution_link:
+video-embed-link:
 team_member:
 _comments:
   title: Add a title for the post. 
@@ -23,6 +24,7 @@ _comments:
   image_attribution_name: Add the name of the image author e.g. Joe Bloggs. 
   image_attribution_link: Add the URL to the image source e.g. https://unsplash.com/photos/SpVHcbuKi6E
   team_member: Set an author for the post from the list of Team Members.
+  video-embed-link: To add a responsive video, add the url from embed link from YouTube or Vimeo. 
 _options:
   layout:
     hidden: true
