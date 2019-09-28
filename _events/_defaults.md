@@ -56,17 +56,7 @@ _array_structures:
         quote:
         company:
         photo_image:
-    - label: Slideshow
-      icon: collections
-      value:
-        _id: slideshow
-        slides: []
-  slides:
-    label: Slide
-    icon: collections
-    value:
-      image:
-      caption:
+
 speaker_blocks: []
 _array_structures:
   speaker_blocks:
