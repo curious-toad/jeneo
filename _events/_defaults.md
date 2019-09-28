@@ -42,12 +42,6 @@ _array_structures:
         title:
         content_markdown:
         image:
-    - label: Table Block
-      icon: table_chart
-      value:
-        _id: table_block
-        start_time:
-        content_text:
     - label: Testimonial
       icon: format_quote
       value:
@@ -56,15 +50,16 @@ _array_structures:
         quote:
         company:
         photo_image:
-
-speaker_blocks: []
-_array_structures:
-  speaker_blocks:
-    - label: Speaker Block
-      icon: person
+    - label: Slideshow
+      icon: collections
       value:
-        _id: speaker_block
-        title:
-        content_markdown:
-        image:
+        _id: slideshow
+        slides: []
+  slides:
+    label: Slide
+    icon: collections
+    value:
+      image:
+      caption:
+
 ---
