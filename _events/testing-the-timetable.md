@@ -44,7 +44,7 @@ _options:
     hidden: true
 page_blocks:
   - _id: table_block
-    start_time:
+    start_time: '9:00 am'
     content_markdown: Here's a test&nbsp;
   - _id: table_block
     start_time:
