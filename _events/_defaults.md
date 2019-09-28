@@ -28,6 +28,7 @@ _comments:
   location_text: Add the full address where the event is being held, as found on Google Maps e.g. Excel, One Western Gateway, Royal Victoria Dock, London, XGL E16 1XL. Displays above the embedded Google Map. 
   category: 
   google_map_embed_code _text: Paste the full embed code from Google Maps. 
+  start_time: Enter the time in 12 hour format (without a leading zero). Add the am/pm suffix. e.g. 9:00 am
 _options:
   layout:
     hidden: true 
@@ -42,7 +43,7 @@ _array_structures:
         content_markdown:
         image:
     - label: Table Block
-      icon: table
+      icon: table_chart
       value:
         _id: table_block
         start_time:
