@@ -60,13 +60,4 @@ _array_structures:
     value:
       image:
       caption:
-agenda_table: [] 
-_array_structures:
-  table_blocks:
-    - lable: Table Row
-      icon: table
-      value:
-        _id: table_row
-        start_time: 
-        detail_text:
 ---
