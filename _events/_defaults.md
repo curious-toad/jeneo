@@ -47,7 +47,7 @@ _array_structures:
       value:
         _id: table_block
         start_time:
-        content_markdown:
+        content_text:
     - label: Testimonial
       icon: format_quote
       value:
