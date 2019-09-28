@@ -32,46 +32,17 @@ _comments:
 _options:
   layout:
     hidden: true 
-page_blocks: []
 _array_structures:
-  page_blocks:
-    - label: Text Block
-      icon: ballot
+  gallery:
+    - label: Image
+      icon: image
       value:
-        _id: text_block
+        image: /placeholder.png
+        caption:
+    - label: External link
+      icon: link
+      value:
+        url:
         title:
-        content_markdown:
-        image:
-    - label: Testimonial
-      icon: format_quote
-      value:
-        _id: testimonial
-        name:
-        quote:
-        company:
-        photo_image:
-    - label: Slideshow
-      icon: collections
-      value:
-        _id: slideshow
-        slides: []
-  slides:
-    label: Slide
-    icon: collections
-    value:
-      image:
-      caption:
-    - label: Speaker 
-      icon: person
-      value:
-        _id: speaker
-        speakers: []
-  speakers:
-    label: Speaker
-    icon: person
-    value:
-      speaker_name:
-      job_title:
-      image:
-      caption:
+
 ---
