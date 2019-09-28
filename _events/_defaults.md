@@ -67,6 +67,6 @@ _array_structures:
       icon: table
       value:
         _id: table_row
-        time: 
-        detail:
+        start_time: 
+        detail_text:
 ---
