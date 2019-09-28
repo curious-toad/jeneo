@@ -61,5 +61,17 @@ _array_structures:
     value:
       image:
       caption:
-
+    - label: Speaker 
+      icon: person
+      value:
+        _id: speaker
+        speakers: []
+  speakers:
+    label: Speaker
+    icon: person
+    value:
+      speaker_name:
+      job_title:
+      image:
+      caption:
 ---
