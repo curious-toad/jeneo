@@ -41,6 +41,13 @@ _array_structures:
         title:
         content_markdown:
         image:
+    - label: Table Block
+      icon: table
+      value:
+        _id: table_block
+        title:
+        content_markdown:
+        image:
     - label: Testimonial
       icon: format_quote
       value:
