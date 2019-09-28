@@ -31,6 +31,7 @@ _comments:
 _options:
   layout:
     hidden: true 
+page_blocks: []
 _array_structures:
   page_blocks:
     - label: Text Block
@@ -59,4 +60,13 @@ _array_structures:
     value:
       image:
       caption:
+agenda_table: [] 
+_array_structures:
+  table_blocks:
+    - lable: Table Row
+      icon: table
+      value:
+        _id: table_row
+        time: 
+        detail:
 ---
