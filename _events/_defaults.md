@@ -12,7 +12,7 @@ event_link:
 venue:
 town:
 location_text:
-google_map_embed_code _text:
+google_map_embed_code_text:
 _comments:
   title: Add a title for the event. 
   description: Add a meta description for SEO.
@@ -31,19 +31,6 @@ _comments:
   start_time: Enter the time in 12 hour format (without a leading zero). Add the am/pm suffix. e.g. 9:00 am
 _options:
   layout:
-    hidden: true 
-gallery_blocks: [] 
-_array_structures:
-  gallery:
-    - label: Image
-      icon: image
-      value:
-        image: /placeholder.png
-        caption:
-    - label: External link
-      icon: link
-      value:
-        url:
-        title:
-
+    hidden: true
+    
 ---
