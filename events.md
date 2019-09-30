@@ -2,7 +2,7 @@
 title: Events
 layout: eventshome
 main-heading: Events Home
-sub-heading: Here is the subheading for events, which I can now edit
+sub-heading: Promoting diversity at industry events
 header-image: /assets/images/events/adobe-speaker-199357227-flip.jpg
 ---
 
