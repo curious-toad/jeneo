@@ -1,7 +1,7 @@
 ---
 title: Events
 layout: eventshome
-main-heading: Events Home
+main-heading: Events
 sub-heading: Promoting diversity at industry events
 header-image: /assets/images/events/adobe-speaker-199357227-flip.jpg
 ---
