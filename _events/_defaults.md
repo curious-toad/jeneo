@@ -33,4 +33,19 @@ _options:
   layout:
     hidden: true
     
+# define array structures
+_array_structures:
+  agenda_tables:
+    label: Agenda Table
+    icon: my-chosen-icon
+    value:
+      # whatever fields you want in each array item
+      _id: agenda_table
+      time:
+      detail:
+  speakers:
+    label: Speakers
+    icon: another-icon:
+    value:
+       # whatever fields you want in each array item
 ---
