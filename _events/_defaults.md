@@ -13,6 +13,21 @@ venue:
 town:
 location_text:
 google_map_embed_code_text:
+_array_structures:
+  agenda_tables:
+    label: Agenda Table
+    icon: my-chosen-icon
+    value:
+      _id: agenda_table
+      time:
+      detail:
+  speakers:
+    label: Speakers
+    icon: another-icon:
+    value:
+      _id: speakers
+      speaker_name:
+      job_title:
 _comments:
   title: Add a title for the event. 
   description: Add a meta description for SEO.
@@ -32,20 +47,4 @@ _comments:
 _options:
   layout:
     hidden: true
-    
-_array_structures:
-  agenda_tables:
-    label: Agenda Table
-    icon: my-chosen-icon
-    value:
-      _id: agenda_table
-      time:
-      detail:
-  speakers:
-    label: Speakers
-    icon: another-icon:
-    value:
-      _id: speakers
-      speaker_name:
-      job_title:
 ---
