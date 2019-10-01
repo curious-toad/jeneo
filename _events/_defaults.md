@@ -45,5 +45,7 @@ _array_structures:
     label: Speakers
     icon: another-icon:
     value:
-       # whatever fields you want in each array item
+      _id: speakers
+      speaker_name:
+      job_title:
 ---
