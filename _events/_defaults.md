@@ -22,6 +22,15 @@ _array_structures:
       _id: agenda_table
       time:
       detail:
+speakers: []
+_array_structures:
+  speakers:
+    -label: Speaker
+    icon: person
+    value:
+      _id: speaker
+      speaker_name:
+      job_role:
 Random_field: 
 Another_field:
 ---
