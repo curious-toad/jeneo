@@ -22,4 +22,5 @@ _array_structures:
       _id: agenda_table
       time:
       detail:
+      test
 ---
