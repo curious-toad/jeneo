@@ -14,7 +14,7 @@ town:
 location_text:
 google_map_embed_code_text:
 agenda_tables: []
-_array_structures_1:
+_array_structures:
   agenda_tables:
     -label: Agenda Table
     icon: table_chart
@@ -23,7 +23,7 @@ _array_structures_1:
       time:
       detail:
 speakers: []
-_array_structures_2:
+_array_structures:
   speakers:
     -label: Speaker
     icon: person
