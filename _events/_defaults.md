@@ -21,12 +21,5 @@ _array_structures:
       _id: agenda_table
       time:
       detail:
-  speakers:
-    - label: Speakers
-    icon: person
-    value:
-      _id: speakers
-      speaker_name:
-      job_title:
 
 ---
