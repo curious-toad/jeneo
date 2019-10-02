@@ -15,15 +15,15 @@ location_text:
 google_map_embed_code_text:
 _array_structures:
   agenda_tables:
-    label: Agenda Table
-    icon: my-chosen-icon
+    - label: Agenda Table
+    icon: table_chart
     value:
       _id: agenda_table
       time:
       detail:
   speakers:
-    label: Speakers
-    icon: another-icon:
+    - label: Speakers
+    icon: person
     value:
       _id: speakers
       speaker_name:
