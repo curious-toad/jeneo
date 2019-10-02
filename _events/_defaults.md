@@ -22,4 +22,6 @@ _array_structures:
       _id: agenda_table
       time:
       detail:
+Random_field: 
+Another_field:
 ---
