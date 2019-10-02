@@ -13,7 +13,7 @@ venue:
 town:
 location_text:
 google_map_embed_code_text:
-empty_array: []
+agenda_tables: []
 _array_structures:
   agenda_tables:
     - label: Agenda Table
