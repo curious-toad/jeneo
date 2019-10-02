@@ -15,7 +15,7 @@ location_text:
 google_map_embed_code_text:
 page_blocks: []
 _array_structures:
-  agenda_tables:
+  page_blocks:
     -label: Agenda Table
     icon: table_chart
     value:
