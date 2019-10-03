@@ -32,10 +32,10 @@ _array_structures:
       value:
         _id: test
         Another: []
-  another:
-    label: another
-    icon: collections
-    value:
-      image:
-      caption:
+        another:
+          label: another
+          icon: collections
+          value:
+            image:
+            caption:
 ---
