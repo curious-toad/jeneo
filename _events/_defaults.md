@@ -21,8 +21,19 @@ _array_structures:
       value:
         _id: slideshow
         slides: []
-  slides:
-    label: Slide
+        slides:
+          label: Slide
+          icon: collections
+          value:
+            image:
+            caption:
+    - label: test
+      icon: collections
+      value:
+        _id: test
+        Another: []
+  another:
+    label: another
     icon: collections
     value:
       image:
