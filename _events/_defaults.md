@@ -14,28 +14,18 @@ town:
 location_text:
 google_map_embed_code_text:
 page_blocks: []
-_array_structures:
-  page_blocks:
-    - label: Slideshow
-      icon: collections
-      value:
-        _id: slideshow
-        slides: []
-        slides:
-          label: Slide
-          icon: collections
-          value:
-            image:
-            caption:
-    - label: test
-      icon: collections
-      value:
-        _id: test
-        Another: []
-        another:
-          label: another
-          icon: collections
-          value:
-            image:
-            caption:
+_array_structures: 
+  page_blocks: 
+    - 
+      icon: person
+      label: "Event Speakers"
+      value: 
+        _id: event_speakers
+        speaker: []
+  speakers: 
+    icon: person
+    label: Speaker
+    value: 
+      caption:
+      image:
 ---
