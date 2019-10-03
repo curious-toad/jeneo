@@ -16,19 +16,30 @@ google_map_embed_code_text:
 page_blocks: []
 _array_structures:
   page_blocks:
-    -label: Agenda Table
-    icon: table_chart
+    - label: Text Block
+      icon: ballot
+      value:
+        _id: text_block
+        title:
+        content_markdown:
+        image:
+    - label: Testimonial
+      icon: format_quote
+      value:
+        _id: testimonial
+        name:
+        quote:
+        company:
+        photo_image:
+    - label: Slideshow
+      icon: collections
+      value:
+        _id: slideshow
+        slides: []
+  slides:
+    label: Slide
+    icon: collections
     value:
-      _id: agenda_table
-      time:
-      detail:
-  speakers:
-    -label: Speaker
-    icon: person
-    value:
-      _id: speaker
-      speaker_name:
-      job_role:
-Random_field: 
-Another_field:
+      image:
+      caption:
 ---
