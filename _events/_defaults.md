@@ -16,21 +16,6 @@ google_map_embed_code_text:
 page_blocks: []
 _array_structures:
   page_blocks:
-    - label: Text Block
-      icon: ballot
-      value:
-        _id: text_block
-        title:
-        content_markdown:
-        image:
-    - label: Testimonial
-      icon: format_quote
-      value:
-        _id: testimonial
-        name:
-        quote:
-        company:
-        photo_image:
     - label: Slideshow
       icon: collections
       value:
